@@ -1,0 +1,524 @@
+.bdln {
+	top: 5px;
+	left: 100px;
+	width: 130px;
+}
+.bsln {
+	top: 50px;
+	left: 100px;
+	width: 130px;
+}
+.swln {
+	top: 100px;
+	left: 100px;
+	width: 130px;
+}
+.scln {
+	top: 150px;
+	left: 100px;
+	width: 130px;
+}
+.ttln {
+	top: 200px;
+	left: 100px;
+	width: 130px;
+}
+.tln {
+	top: 250px;
+	left: 100px;
+	width: 130px;
+}
+.vbln {
+	top: 300px;
+	left: 100px;
+	width: 130px;
+}
+
+.bwln {
+	top: 5px;
+	left: 100px;
+	width: 130px;
+}
+.ckln {
+	top: 50px;
+	left: 100px;
+	width: 130px;
+}
+.chln {
+	top: 100px;
+	left: 100px;
+	width: 130px;
+}
+.dln {
+	top: 150px;
+	left: 100px;
+	width: 130px;
+}
+.srln {
+	top: 200px;
+	left: 100px;
+	width: 130px;
+}
+/* BASKETBALL TITLE */
+body {
+	background-image: url('image/basketballbg.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+div.container-box h1.bluebd.whiteshadowtxt, 
+div.container-box button.bluebd.whiteshadowtxt {
+	background-color: rgba(0, 0, 100, .5);
+	color: black;
+	font-size: 40px;
+	position: relative;
+	display: inline-block;
+	margin: auto;
+	width: 100px;
+	padding: 10px 35px;
+}
+#button-title {
+	font-size: 22px;
+	margin-left: 80px;
+	display: inline-block;
+	padding: auto;
+	width: 300px;
+}
+
+/* BASKETBALL PLAYER */
+.bb-player-display{
+	max-width: auto;
+	margin: 10px;
+	padding: auto;
+}
+#home-team, #guest-team {
+	font-size: 18px;
+	border: unset;
+	width: auto;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+#blueborder {
+	border: 3px solid blue;
+}
+#bb-guest-player1, #bb-guest-player2,
+#bb-guest-player3, #bb-guest-player4,
+#bb-guest-player5, #bb-guest-subplayer1,
+#bb-guest-subplayer2, #bb-guest-subplayer3,
+#bb-guest-subplayer4, #bb-guest-subplayer5 {
+	border: 1px solid blue;
+}
+input[type='text'] {
+	border: 3px solid yellow;
+	column-count: 2;
+	display: flex;
+	align-items: center;
+	border: 1px solid yellow;
+	width: 170px;
+	margin: 0px 5px 0px 5px;
+	padding: 10px 10px;
+	text-align: center;
+}
+div.bb-player-grid.clearfix div.bb-player input,
+div.bb-player-grid.clearfix div.bb-guest-player input {
+	background-color: black;
+	color: white;
+}
+div.bb-player-grid.clearfix div.bb-subplayer input,
+div.bb-player-grid.clearfix div.bb-guest-subplayer input {
+	background-color: black;
+	color: indianred;
+}
+
+.bb-player-grid {
+	border: 3px solid yellow;
+	column-count: 2;
+	display: flex;
+	align-items: center;
+}
+
+div.bb-player-display.bluebd.blackbg.whitetxt {
+	font-size: 12px;
+}
+
+/* BASKETBALL SCORING */
+.bb-score-box {
+	max-width: 400px;
+	margin: 10px;
+	padding: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bb-score-txt {
+	padding: 15px;
+	padding-bottom: 0px;
+	font-size: 28px;
+	position: relative;
+	top: 15px;
+}
+.bb-score-num {
+	padding: 1px;
+	font-size: 40px;
+	top: 15px;
+	margin: -5px 35px 35px 35px;
+}
+.periodtxt {
+ 	position: absolute;
+ 	top: 170px;
+ 	left: 10px;
+ 	right: 10px;
+}
+div.blackbd.cadetbluebg.blacktxt p {
+	font-size: 22px;
+	margin: 20px 20px;
+	width: auto;
+	height: 40px;
+	padding: 10px 5px 10px 5px;
+}
+p.cadetbluebg.blacktxt {
+	font-size: 18px;
+	width: 60px;
+	height: 25px;
+	position: absolute;
+	padding-top: 5px;
+	margin-left: 150px;
+	margin-top: -20px;
+}
+div.cadetbluebg.whitetxt.blackbd div.child h2 {
+	font-size: 18px;
+	margin: -10px 2px 10px 2px;
+	padding: 20px;
+}
+div.child p.bb-score-num.blackbg {
+	margin-top: 20px;
+}
+
+/* BASKETBALL BUTTONS */
+.bb-button-box {
+	max-width: auto;
+	max-height: 300px;
+	margin: 5px;
+	padding: auto;
+	position: relative;
+	height: 150px;
+}
+.bb-button-txt {
+	padding: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin: 5px;
+	font-size: 28px;
+	position: relative;
+}
+.bb-button-num {
+	font-size: 13px;
+	color: black;
+	background-color: lightyellow;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#countdownTimer-box {
+	position: absolute;
+	top: 70px;
+	left: 120px;
+	right: 120px;
+	max-width: 150px;
+}
+.hometxt {
+	left: -70px;
+}
+.guesttxt {
+	right: -70px;
+}
+div.child div.bb-button-box.whitetxt.yellowbd p {
+	margin: 2px 5px 2px 5px;
+}
+div.bb-button-box.whitetxt.yellowbd h3,
+div.bb-button-box.whitetxt.yellowbd td h3,
+div.bb-button-box.blacktxt.yellowbd 
+table.countdown-timer-box.child tr td h3 {
+	margin: auto;
+	width: auto;
+	font-size: 20px;
+	padding: 5px;
+}
+div.child div.bb-button-box.whitetxt.yellowbd h4 {
+	position: relative;
+	margin-left: 42px;
+	position: relative;
+	left: 41px;
+	font-size: 15px;
+}
+div.bb-button-box.blacktxt.yellowbd h3, 
+div.bb-button-box.blacktxt.whitebd button {
+	padding: 5px;
+	margin: 10px 20px 10px 20px;
+	width: 100px;
+}
+div.bb-button-box.blacktxt.whitebd button {
+	background-color: lightyellow;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+.countdown-timer-box {
+	position: absol;
+	top: 15px;
+	left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	background-color: #ddd;
+	color: black;
+	border: 1px solid #999;
+	padding: 10px;
+	box-shadow: 0 0 5px 3px #ccc;
+}
+.countdown-timer-num {
+	background-color: black;
+	color: white;
+	width: 40px;
+	height: 20px;
+}
+.timer-txt {
+	font-size: 12px;
+}
+#timer-reset, #timer1-reset {
+	color: black;
+	position: relative;
+	margin-top: 20px;
+	background-color: lightyellow;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#timer-start, #timer1-start {
+	color: black;
+	position: relative;
+	top: 10px;
+	margin: 10px;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#timer-stop, #timer1-stop {
+	color: black;
+	position: relative;
+	top: 10px;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+
+#sc-start {
+	position: relative;
+	margin: 5px;
+	top: -6px;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#sc-stop {
+	margin: 5px;
+	position: relative;
+	right: 58px;
+	top: -13px;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#sc-reset {
+	margin: 5px;
+	position: relative;
+	right: 120px;
+	top: 16px;
+	background-color: lightyellow;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#sc1-start {
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#sc2-stop {
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+#sc3-reset {
+	background-color: lightyellow;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+
+div.bb-button-box.blacktxt.yellowbd button {
+	margin: 5px 5px 5px 5px;
+}
+
+.bb-button-period {
+	position: relative;
+	bottom: 0px;
+	right: -120px;
+	width: 0px;
+}
+
+.bb-button-periodbox {
+	position: absolute;
+	right: 70px;
+	top: 10px;
+	margin: auto;
+}
+.bb-button-display {
+	position: relative;
+	right: -15px;
+	max-width: 80px;
+}
+.bb-button-displaytxt {
+	font-size: 15px;
+	right: -25px;
+}
+
+.bb-button-save {
+	position: relative;
+	top: -12px;
+	right: -160px;
+	background-color: lightyellow;
+	border: 1px solid darkgray;
+	box-shadow: 1px 2px 2px dimgray;
+	color: black;
+}
+.bb-button-savetxt {
+	position: relative;
+	left: 130px;
+	bottom: -17px;
+	height: 5px;
+	width: 20px;
+}
+
+/* DISPLAY TWO */
+.displaytwo-buttona {
+	position: absolute;
+	left: 3px;
+	top: 180px;
+}
+.displaytwo-buttonb {
+	position: absolute;
+	left: 3px;
+	top: 210px;
+}
+.displaytwo-buttonc {
+	position: absolute;
+	left: 3px;
+	top: 240px;
+}
+.displaytwo-buttond {
+	position: absolute;
+	left: 115px;
+	top: 180px;
+}
+.displaytwo-buttone {
+	position: absolute;
+	left: 115px;
+	top: 210px;
+}
+.displaytwo-buttonf {
+	position: absolute;
+	left: 115px;
+	top: 240px;
+}
+
+.displaytwo-button1a {
+	position: absolute;
+	right: 115px;
+	top: 180px;
+}
+.displaytwo-button2b {
+	position: absolute;
+	right: 115px;
+	top: 210px;
+}
+.displaytwo-button3c {
+	position: absolute;
+	right: 115px;
+	top: 240px;
+}
+.displaytwo-button4d {
+	position: absolute;
+	right: 3px;
+	top: 180px;
+}
+.displaytwo-button5e {
+	position: absolute;
+	right: 3px;
+	top: 210px;
+}
+.displaytwo-button6f {
+	position: absolute;
+	right: 3px;
+	top: 240px;
+}
+.displaytwo-perioda {
+	position: absolute;
+	top: 240px;
+	left: 165px;
+}
+.displaytwo-periodb {
+	position: absolute;
+	top: 240px;
+	left: 205px;
+}
+.displaytwo-home-foula {
+	position: absolute;
+	left: 40px;
+	top: 380px;
+}
+.displaytwo-home-foulb {
+	position: absolute;
+	left: 80px;
+	top: 380px;
+}
+.displaytwo-guest-foula {
+	position: absolute;
+	right: 40px;
+	top: 380px;
+}
+.displaytwo-guest-foulb {
+	position: absolute;
+	right: 80px;
+	top: 380px;
+}
+.displaytwo-timer {
+	position: absolute;
+	top: 60px;
+	left: 8px;
+}
+.displaytwo-timer-button {
+	position: absolute;
+	top: 40px;
+	left: 210px;
+}
+.displaytwo-sc {
+	position: absolute;
+	top: 370px;
+	left: 175px;
+}
+.displaytwo-scbutton {
+	position: absolute;
+	top: 400px;
+	left: 120px;
+}
+
+.displaytwo-disp {
+	position: absolute;
+	top: -30px;
+	left: 100px;
+}
+
+#displayTwodiv {
+	display: none;
+}

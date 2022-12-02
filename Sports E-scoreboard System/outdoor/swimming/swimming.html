@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swimming e-scoreboard</title>
+	<link rel='stylesheet' href="swimming.css">
+	<link rel='stylesheet' href="../../index.css">
+</head>
+
+<body class="blackbg">
+
+		<!-- MENU OPTION -->
+
+	<header>
+		<nav class="relative">	
+			<div class="child leftnav">
+				<input type="checkbox" id="menu"/>
+				<label for="menu">
+					<img src="image/swimmingmenu.png" height="20px" width="20px">
+				</label>
+					<table class="menu">
+					<tr>
+						<td class="outmenu relative">
+							<input type="checkbox" id="outmenu" class="outdoor" />
+							<label for="outmenu">
+								<span class="mainmenu">Outdoor</span>
+							</label>
+							<span class="outsubmenu bdln">
+								<a href="../../outdoor/badminton/badminton.html">Badminton</a>
+							</span>
+							<span class="outsubmenu bsln">
+								<a href="../../outdoor/baseball/baseball.html">Baseball / Softball</a>
+							</span>
+							<span class="outsubmenu bbln">
+								<a href="../../index.html">Basketball</a>
+							</span>
+							<span class="outsubmenu scln">
+								<a href="../../outdoor/soccer/soccer.html">Soccer</a>
+							</span>
+							<span class="outsubmenu ttln">
+								<a href="../../outdoor/tabletennis/tabletennis.html">Table Tennis</a>
+							</span>
+							<span class="outsubmenu tln">
+								<a href="../../outdoor/tennis/tennis.html">Tennis</a>
+							</span>
+							<span class="outsubmenu vbln">
+								<a href="../../outdoor/volleyball/volleyball.html">Volleyball</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="inmenu relative">
+							<input type="checkbox" id="inmenu" class="indoor" />
+							<label for="inmenu">
+								<span class="mainmenu">Indoor</span>
+							</label>
+							<span class="insubmenu bwln">
+								<a href="../../indoor/bowling/bowling.html">Bowling</a>
+							</span>
+							<span class="insubmenu ckln">
+								<a href="../../indoor/checkers/checkers.html">Checkers</a>
+							</span>
+							<span class="insubmenu chln">
+								<a href="../../indoor/chess/chess.html">Chess</a>
+							</span>
+							<span class="insubmenu dln">
+								<a href="../../indoor/darts/darts.html">Darts</a>
+							</span>
+							<span class="insubmenu srln">
+								<a href="../../indoor/scrabble/scrabble.html">Scrabble</a>
+							</span>
+						</td>
+					</tr>
+					</table>
+				
+				
+			</div>
+			<div class="child rightnav">
+				<span>
+      				<a href="youtube link how to use / tutorial">About us</a>
+      			</span>
+				<span>
+					<a href="website to show members /out us">Tutorial</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+
+	<!-- TITLE OPTION -->
+
+	<div class="container-box">
+		<h1 class='title-swimming bluebd whiteshadowtxt'>Swimming</h1>
+		<button class='title-swimming bluebd whiteshadowtxt' 
+			id="button-title">X Players</button>
+
+	<div class="parent">
+
+		<div class='child' id="displayOnediv">
+				<div class="sw-player-display yellowbd blackbg whitetxt">
+					
+					<table class='rank sw-player-grid clearfix'>
+						<tr>
+							<th><h3 class="sw-lane child">LN</h3></th>
+							<th><h3 class="sw-athlete child">Athlete</h3></th>
+							<th><h3 class="sw-place child">PL</h3></th>
+							<th><h3 class="sw-finish child">Finish</h3></th>
+						</tr>
+						<tr>
+							<td class="sw-player-num">
+							<input type="text"
+								class="whitetxt redshadowtxt" 
+							 	size="1" 
+								id='sw-player1-num' 
+								placeholder="1">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player2-num' 
+								placeholder="2">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player3-num' 
+								placeholder="3">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player4-num' 
+								placeholder="4">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player5-num' 
+								placeholder="5">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player6-num' 
+								placeholder="6">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player7-num' 
+								placeholder="7">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player8-num' 
+								placeholder="8">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player9-num' 
+								placeholder="9">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player10-num' 
+								placeholder="10">
+						</td>
+						<td>
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player1' 
+								placeholder="Player 1">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player2' 
+								placeholder="Player 2">
+							
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								id='sw-player3' 
+								placeholder="Player 3">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player4' 
+								placeholder="Player 4">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player5' 
+								placeholder="Player 5">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player6' 
+								placeholder="Player 6">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player7' 
+								placeholder="Player 7">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player8' 
+								placeholder="Player 8">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player9' 
+								placeholder="Player 9">
+							
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								id='sw-player10' 
+								placeholder="Player 10">
+						</td>
+						<td class="sw-player-place">
+							<input type="text"
+								class="whitetxt redshadowtxt" 
+							 	size="1" 
+								id='sw-player1-place' 
+								placeholder="0">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player2-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player3-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player4-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player5-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player6-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player7-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player8-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player9-place' 
+								placeholder="0">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player10-place' 
+								placeholder="0">
+
+						</td>
+						<td>
+							<div class="sw-player1-timermin child">
+							<input type="text"
+								class="whitetxt redshadowtxt" 
+							 	size="1" 
+								id='sw-player1-timermin' 
+								placeholder="00">
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player2-timermin' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player3-timermin' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player4-timermin' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player5-timermin' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player6-timermin' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player7-timermin' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player8-timermin' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player9-timermin' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player10-timermin' 
+								placeholder="00">
+
+							</div>
+							<div class="sw-player1-timersec child">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player1-timersec' 
+								placeholder="00">
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player2-timersec' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player3-timersec' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player4-timersec' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player5-timersec' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player6-timersec' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player7-timersec' 
+								placeholder="00">
+
+							<input type="text"
+								class="whitetxt redshadowtxt"  
+								size="1" 
+								id='sw-player8-timersec' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player9-timersec' 
+								placeholder="00">
+
+							<input type="text" 
+								class="whitetxt redshadowtxt" 
+								size="1" 
+								id='sw-player10-timersec' 
+								placeholder="00">
+
+							</div>
+							<div class="sw-player1-timermili child">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player1-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player2-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player3-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player4-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player5-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player6-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player7-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player8-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player9-timermili' 
+								placeholder="000">
+							<input type="text"
+								class="whitetxt child redshadowtxt" 
+							 	size="1" 
+								id='sw-player10-timermili' 
+								placeholder="000">
+							</div>
+						</td>	
+						</tr>	
+					</table>
+				</div>
+
+				
+				
+			</div>
+
+		<!-- TABLE TENNIS SCORING -->
+			<div class="child relative sw-scoring-box indianredbg">
+				<div id="player1" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player1-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player1-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player1-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player1-name'>Player 1
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player1-line'>1</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p1"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p1" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p1" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p1" onclick="startStopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p1" onclick="stopStopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p1" onclick="resetStopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player2" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player2-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player2-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player2-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player2-name'>Player 2
+							</h2>
+						
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player2-line'>2</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p2"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p2" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p2" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p2" onclick="start1Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p2" onclick="stop1Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p2" onclick="reset1Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player3" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player3-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player3-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player3-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player3-name'>Player 3
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player3-line'>3</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p3"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p3" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p3" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p3" onclick="start2Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p3" onclick="stop2Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p3" onclick="reset2Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player4" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player4-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player4-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player4-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player4-name'>Player 4
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player4-line'>4</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p4"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p4" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p4" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p4" onclick="start3Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p4" onclick="stop3Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p4" onclick="reset3Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player5" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player5-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player5-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player5-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player5-name'>Player 5
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player5-line'>5</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p5"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p5" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p5" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p5" onclick="start4Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p5" onclick="stop4Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p5" onclick="reset4Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player6" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player6-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player6-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player6-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player6-name'>Player 6
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player6-line'>6</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p6"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p6" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p6" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p6" onclick="start5Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p6" onclick="stop5Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p6" onclick="reset5Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player7" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player7-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player7-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player7-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player7-name'>Player 7
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player7-line'>7</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p7"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p7" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p7" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p7" onclick="start6Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p7" onclick="stop6Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p7" onclick="reset6Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player8" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player8-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player8-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player8-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player8-name'>Player 8
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player8-line'>8</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p8"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p8" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p8" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p8" onclick="start7Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p8" onclick="stop7Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p8" onclick="reset7Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player9" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player9-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player9-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player9-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player9-name'>Player 9
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player9-line'>9</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p9"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p9" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p9" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p9" onclick="start8Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p9" onclick="stop8Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p9" onclick="reset8Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div id="player10" class="swData">
+					<div>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player10-scoremin'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player10-scoresec'>00</h2>
+						<h2 class="ctfont child sw-score-num yellowtxt blackbg blackshadowtxt"
+								id='sw-player10-scoremili'>000</h2>
+					</div>
+					<div class="child redbg blackbd roundborder">
+							<h2 class="sw-score-txt yellowtxt blackshadowtxt child" 
+								id='sw-player10-name'>Player 10
+							</h2>
+							
+							<h3 class="sw-player-line roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='sw-player10-line'>10</h3>
+					</div>
+					<div class="swButton">
+						<table class="d2-timer-p1 redbd blackbg absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute-p10"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second-p10" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-milisecond-p10" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start-p10" onclick="start9Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop-p10" onclick="stop9Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset-p10" onclick="reset9Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+					</div>
+				</div>
+				<div class="swButton">
+							<button class="blacktxt absolute child"
+								id='displayOne1'>H/S Players</button>
+							<button class="blacktxt absolute child"
+								id='displayTwo1'>H/S Buttons</button>
+						<div class="d2-dp sw-score-dropdown absolute">
+						<select class="sw-display2one blacktxt child"
+							id="swplayerName">
+							<option id="sw1-player1-drop" 
+								value="player1">Player 1</option>
+							<option id="sw1-player2-drop" 
+								value="player2">Player 2</option>
+							<option id="sw1-player3-drop" 
+								value="player3">Player 3</option>
+							<option id="sw1-player4-drop" 
+								value="player4">Player 4</option>
+							<option id="sw1-player5-drop" 
+								value="player5">Player 5</option>
+							<option id="sw1-player6-drop" 
+								value="player6">Player 6</option>
+							<option id="sw1-player7-drop" 
+								value="player7">Player 7</option>
+							<option id="sw1-player8-drop" 
+								value="player8">Player 8</option>
+							<option id="sw1-player9-drop" 
+								value="player9">Player 9</option>
+							<option id="sw1-player10-drop" 
+								value="player10">Player 10</option>
+						</select>
+				</div>	
+				</div>
+			</div>
+				
+		<!-- TABLE TENNIS BUTTONS -->
+			<div class="child relative whitebd roundborder blackbg" id="displayTwodiv">
+				<div class="sw-wrapper sw-vs-player">
+
+				<div class="sw-score-dropdown">
+						<select class="sw-display2one blacktxt child"
+							id="swplayerName1">
+							<option id="sw-player1-drop" 
+								value="player1">Player 1</option>
+							<option id="sw-player2-drop" 
+								value="player2">Player 2</option>
+							<option id="sw-player3-drop" 
+								value="player3">Player 3</option>
+							<option id="sw-player4-drop" 
+								value="player4">Player 4</option>
+							<option id="sw-player5-drop" 
+								value="player5">Player 5</option>
+							<option id="sw-player6-drop" 
+								value="player6">Player 6</option>
+							<option id="sw-player7-drop" 
+								value="player7">Player 7</option>
+							<option id="sw-player8-drop" 
+								value="player8">Player 8</option>
+							<option id="sw-player9-drop" 
+								value="player9">Player 9</option>
+							<option id="sw-player10-drop" 
+								value="player10">Player 10</option>
+						</select>
+				</div>	
+			</div>
+
+			<div class="relative child">
+				<div id="timerOne">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p1"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p1" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p1" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p1" onclick="startStopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p1" onclick="stopStopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p1" onclick="resetStopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">1</h3>
+			</div>
+			<div class="relative" id="timerTwo">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p2"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p2" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p2" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p2" onclick="start1Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p2" onclick="stop1Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p2" onclick="reset1Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">2</h3>
+			</div>
+			<div class="relative" id="timerThree">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p3"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p3" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p3" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p3" onclick="start2Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p3" onclick="stop2Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p3" onclick="reset2Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">3</h3>
+			</div>
+			<div class="relative" id="timerFour">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p4"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p4" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p4" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p4" onclick="start3Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p4" onclick="stop3Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p4" onclick="reset3Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">4</h3>
+			</div>
+			<div class="relative" id="timerFive">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p5"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p5" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p5" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p5" onclick="start4Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p5" onclick="stop4Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p5" onclick="reset4Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">5</h3>
+			</div>
+			<div class="relative" id="timerSix">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p6"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p6" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p6" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p6" onclick="start5Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p6" onclick="stop5Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p6" onclick="reset5Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">6</h3>
+			</div>
+			<div class="relative" id="timerSeven">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p7"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p7" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p7" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p7" onclick="start6Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p7" onclick="stop6Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p7" onclick="reset6Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">7</h3>
+			</div>
+			<div class="relative" id="timerEight">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p8"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p8" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p8" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p8" onclick="start7Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p8" onclick="stop7Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p8" onclick="reset7Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">8</h3>
+			</div>
+			<div class="relative" id="timerNine">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p9"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p9" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p9" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p9" onclick="start8Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p9" onclick="stop8Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p9" onclick="reset8Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">9</h3>
+			</div>
+			<div class="relative" id="timerTen">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute-p10"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second-p10" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-milisecond-p10" 
+								max='99' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+						<td>miliseconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-start-p10"onclick="start9Stopwatch()">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-stop-p10"onclick="stop9Stopwatch()">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer-reset-p10"onclick="reset9Stopwatch()">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<h3 class="sw-button-txt whitebg child blackbd blacktxt">10</h3>
+			</div>
+				
+				<div class="sw-button-save">
+					<div class="child">
+						<input type="text" 
+							placeholder="sport_sportname.excel"
+							class="whitetxt blackbg"
+							size="30"
+							maxlength="30">
+					</div>
+					<div class="child">
+						<button class="blacktxt">Save</button>
+					</div>
+				</div>
+			</div>
+				<div class="child">
+					<div class="whitebd whitetxt">
+						<h3>Buttons</h3>
+						
+						<div>
+							<button class="blacktxt child"
+								id='displayOne'>H/S Players</button>
+							<button class="blacktxt child"
+								id='displayTwo'>H/S Buttons</button>
+						</div>
+						<p></p>
+						<div>
+							<button class="blacktxt child"
+								id='displayAll'>Showll</button>
+							<button class="blacktxt child"
+								id='displayHide'>Hidell</button>
+						</div>
+						<p></p>
+						<div>
+							<button class="blacktxt child"
+								id='timerStartll' onclick="timerStartll()">Startll</button>
+							<button class="blacktxt child"
+								id='timerStartll' onclick="timerStopll()">Stopll</button>
+							<button class="blacktxt child"
+								id='timerStartll' onclick="timerResetll()">Resettll</button>
+						</div>
+						<h3>H/S Timer</h3>
+						<div>
+							<button class="blacktxt child"
+								id='displaypt1'>H/S 1</button>
+							<button class="blacktxt child"
+								id='displaypt2'>H/S 2</button>
+							<button class="blacktxt child"
+								id='displaypt3'>H/S 3</button>
+						</div>
+						<p></p>
+						<div>
+							<button class="blacktxt child"
+								id='displaypt4'>H/S 4</button>
+							<button class="blacktxt child"
+								id='displaypt5'>H/S 5</button>
+							<button class="blacktxt child"
+								id='displaypt6'>H/S 6</button>
+						</div>
+						<p></p>
+						<div>
+							<button class="blacktxt child"
+								id='displaypt7'>H/S 7</button>
+							<button class="blacktxt child"
+								id='displaypt8'>H/S 8</button>
+							<button class="blacktxt child"
+								id='displaypt9'>H/S 9</button>
+							<button class="blacktxt child"
+								id='displaypt10'>H/S 10</button>
+						</div>
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+	</div>
+	</div>
+<script src="../../jquery.js"></script>
+<script src = "swimming.js"></script>
+</body>
+
+</html>

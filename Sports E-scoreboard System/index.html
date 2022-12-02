@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basketball e-scoreboard</title>
+	<link rel='stylesheet' href='default.css'>
+	<link rel='stylesheet' href="index.css">
+</head>
+
+<body class ="blackbg blacktxt">
+
+		<!-- MENU OPTION -->
+	<header>
+		<nav class="relative">	
+			<div class="child leftnav">
+				<input type="checkbox" id="menu"/>
+				<label for="menu">
+					<img src="image/basketballmenu.png" height="50px" width="50px">
+				</label>
+					<table class="menu">
+					<tr>
+						<td class="outmenu relative">
+							<input type="checkbox" id="outmenu" class="outdoor" />
+							<label for="pdmenu">
+								<span class="mainmenu">Outdoor</span>
+							</label>
+							<span class="outsubmenu bdln">
+								<a href="outdoor/badminton/badminton.html">Badminton</a>
+							</span>
+							<span class="outsubmenu bsln">
+								<a href="outdoor/baseball/baseball.html">Baseball / Softball</a>
+							</span>
+							<span class="outsubmenu swln">
+								<a href="outdoor/swimming/swimming.html">Swimming</a>
+							</span>
+							<span class="outsubmenu scln">
+								<a href="outdoor/soccer/soccer.html">Soccer</a>
+							</span>
+							<span class="outsubmenu ttln">
+								<a href="outdoor/tabletennis/tabletennis.html">Table Tennis</a>
+							</span>
+							<span class="outsubmenu tln">
+								<a href="outdoor/tennis/tennis.html">Tennis</a>
+							</span>
+							<span class="outsubmenu vbln">
+								<a href="outdoor/volleyball/volleyball.html">Volleyball</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="inmenu relative">
+							<input type="checkbox" id="inmenu" class="indoor" />
+							<label for="inmenu">
+								<span class="mainmenu">Indoor</span>
+							</label>
+							<span class="insubmenu bwln">
+								<a href="indoor/bowling/bowling.html">Bowling</a>
+							</span>
+							<span class="insubmenu ckln">
+								<a href="indoor/checkers/checkers.html">Checkers</a>
+							</span>
+							<span class="insubmenu chln">
+								<a href="indoor/chess/chess.html">Chess</a>
+							</span>
+							<span class="insubmenu dln">
+								<a href="indoor/darts/darts.html">Darts</a>
+							</span>
+							<span class="insubmenu srln">
+								<a href="indoor/scrabble/scrabble.html">Scrabble</a>
+							</span>
+						</td>
+					</tr>
+					</table>
+				
+				
+			</div>
+			<div class="child rightnav">
+				<span>
+      				<a href="youtube link how to use / tutorial">About us</a>
+      			</span>
+				<span>
+					<a href="website to show members /out us">Tutorial</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+
+		<!-- BASKETBALL DEFAULT -->
+	<div class="container-box">
+		<h1 class='bluebd whiteshadowtxt'>Basketball</h1>
+		<button class='bluebd whiteshadowtxt' id="button-title">Round Robin</button>
+
+		<div class="parent">
+
+			<div class='child' id="displayOnediv">
+				<div class="bb-player-display yellowbd blackbg whitetxt">
+					<input type="text" 
+						class="blacktxt yellowshadowtxt" 
+						id='home-team' 
+						size="35" 
+						placeholder="STICA Basketball Team">
+
+					<div class='bb-player-grid clearfix'>
+						<div class='bb-player'>
+
+							<input type="text" 
+								id='bb-player1' 
+								placeholder="Player 1">
+
+							<input type="text" 
+								id='bb-player2' 
+								placeholder="Player 2">
+
+							<input type="text" 
+								id='bb-player3' 
+								placeholder="Player 3">
+
+							<input type="text" 
+								id='bb-player4' 
+								placeholder="Player 4">
+
+							<input type="text" 
+								id='bb-player5' 
+								placeholder="Player 5">
+						</div>
+						<div class='bb-subplayer'>
+
+							<input type="text" 
+								id='bb-subplayer1' 
+								placeholder="SubPlayer 1">
+
+							<input type="text" 
+								id='bb-subplayer2' 
+								placeholder="SubPlayer 2">
+
+							<input type="text" 
+								id='bb-subplayer3' 
+								placeholder="SubPlayer 3">
+
+							<input type="text" 
+								id='bb-subplayer4' 
+								placeholder="SubPlayer 4">
+
+							<input type="text" 
+								id='bb-subplayer5' 
+								placeholder="SubPlayer 5">
+						</div>
+					</div>
+				</div>
+
+				<div class="bb-player-display bluebd blackbg whitetxt">
+					<input type="text" 
+						class="whitetxt blueshadowtxt" 
+						id='guest-team' 
+						size="35" 
+						placeholder="Guest Team">	
+
+					<div class='bb-player-grid clearfix' id='blueborder'>
+						<div class='bb-guest-player'>
+
+							<input type="text" 
+								id='bb-guest-player1' 
+								placeholder="Guest Player 1">
+
+							<input type="text" 
+								id='bb-guest-player2' 
+								placeholder="Guest Player 2">
+
+							<input type="text" 
+								id='bb-guest-player3' 
+								placeholder="Guest Player 3">
+
+							<input type="text" 
+								id='bb-guest-player4' 
+								placeholder="Guest Player 4">
+
+							<input type="text" 
+								id='bb-guest-player5' 
+								placeholder="Guest Player 5">
+
+						</div>
+						<div class='bb-guest-subplayer'>
+							
+							<input type="text" 
+								id='bb-guest-subplayer1' 
+								placeholder="Guest SubPlayer 1">
+							
+							<input type="text" 
+								id='bb-guest-subplayer2' 
+								placeholder="Guest SubPlayer 2">
+							
+							<input type="text" 
+								id='bb-guest-subplayer3' 
+								placeholder="Guest SubPlayer 3">
+							
+							<input type="text" 
+								id='bb-guest-subplayer4' 
+								placeholder="Guest SubPlayer 4">
+							
+							<input type="text" 
+								id='bb-guest-subplayer5' 
+								placeholder="Guest SubPlayer 5">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- BASKETBALL SCORING -->	
+			<div class="child">	
+				<div class="bb-score-box blackbg bluebd whitetxt">
+					<h2>Scores</h2>
+						<div class="blackbd cadetbluebg blacktxt">
+							<div class="child">
+								<h3 class="hometxt bb-score-txt blueshadowtxt yellowshadowtxt">Home</h3>
+							</div>
+							<div class="child">
+								<p class='ctfont lightyellowbg center' id="countdownTimer-box">00:00</p>
+							</div>
+							<div class='child'>
+								<h3 class="guesttxt bb-score-txt blueshadowtxt whitetxt">Guest</h3>
+							</div>
+
+					</div>
+						<p class="periodtxt cadetbluebg whiteshadowtxt blacktxt blackbd">Period</p>
+						<div class="cadetbluebg whitetxt">
+							<div class="child">
+								<h2 class="ctfont bb-score-num blackbg blacktxt yellowshadowtxt"
+									id='home-score'>000</h2>
+							</div>
+							<div class="child">
+								<p class='ctfont bb-score-num blackbg'
+									id='period'>0</p>
+							</div>
+							<div class='child'>
+								<h2 class="ctfont bb-score-num blackbg blueshadowtxt"
+									id='guest-score'>000</h2>
+							</div>
+					</div>
+
+					<div class="cadetbluebg whitetxt blackbd">
+						<div class="child">
+							<h2 class="bb-score-txt blacktxt yellowshadowtxt">Fouls</h2></div>
+						<div class="child">
+							<h2 class='bb-score-txt'>Shot Clock</h2></div>
+						<div class='child'>
+							<h2 class="bb-score-txt blueshadowtxt">Fouls</h2></div>
+					</div>
+
+					<div class="cadetbluebg whitetxt blackbg">
+						<div class="child">
+							<h2 class="ctfont bb-score-num blackbg yellowshadowtxt blacktxt"
+								id="home-foul">00</h2>
+						</div>
+						<div class="child">
+							<h2 class='ctfont bb-score-num blackbg'
+								id='shot-clock'>00</h2>
+						</div>
+						<div class='child'>
+							<h2 class="ctfont bb-score-num blackbg blueshadowtxt"
+								id="guest-foul">00	</h2>
+						</div>
+					</div>
+
+			<!-- DISPLAY TWO -->
+				<div id="displayTwodiv">
+					<div>
+						<button class="bb-button-num displaytwo-buttona" 
+							onclick="haddOne()" 
+							id = 'home-add-one'>+1</button>
+						<button class="bb-button-num displaytwo-buttonb"
+							onclick="haddTwo()"
+							id = 'home-add-two'>+2</button>
+						<button class="bb-button-num displaytwo-buttonc"
+							onclick="haddThree()"
+							id = 'home-add-three'>+3</button>
+					</div>
+					<div>
+						<button class="bb-button-num displaytwo-buttond" 
+							onclick="hsubOne()"
+							id = 'home-sub-one'>-1</button>
+						<button class="bb-button-num displaytwo-buttone"
+							onclick="hsubTwo()"
+							id = 'home-sub-two'>-2</button>
+						<button class="bb-button-num displaytwo-buttonf"
+							onclick="hsubThree()"
+							id = 'home-sub-three'>-3</button>
+					</div>
+					<div>
+						<button class="bb-button-num displaytwo-button1a" 
+							onclick="gaddOne()"
+							id = 'guest-add-one'>+1</button>
+						<button class="bb-button-num displaytwo-button2b"
+							onclick="gaddTwo()"
+							id = 'guest-add-two'>+2</button>
+						<button class="bb-button-num displaytwo-button3c"
+							onclick="gaddThree()"
+							id = 'guest-add-three'>+3</button>
+					</div>
+					<div>
+						<button class="bb-button-num displaytwo-button4d" 
+							onclick="gsubOne()"
+							id = 'guest-sub-one'>-1</button>
+						<button class="bb-button-num displaytwo-button5e"
+							onclick="gsubTwo()"
+							id = 'guest-sub-two'>-2</button>
+						<button class="bb-button-num displaytwo-button6f"
+							onclick="gsubThree()"
+							id = 'guest-sub-three'>-3</button>
+					</div>
+					<div>
+						<button class="bb-button-num displaytwo-perioda"
+							onclick="paddOne()" 
+							id = "period-add">+1</button>
+						<button class="bb-button-num displaytwo-periodb"
+							onclick="psubOne()" 
+							id = "period-sub">-1</button>
+					</div>
+					<div>
+						<button class="bb-button-num displaytwo-home-foula"
+							onclick="haddFoul()" 
+							id = 'home-add-foul'>+1</button>
+						<button class="bb-button-num displaytwo-home-foulb"
+							onclick="hsubFoul()" 
+							id = 'home-sub-foul'>-1</button>
+						<button class="bb-button-num displaytwo-guest-foula"
+							onclick="gaddFoul()" 
+							id = 'guest-add-foul'>+1</button>
+						<button class="bb-button-num displaytwo-guest-foulb"
+							onclick="gsubFoul()" 
+							id = 'guest-sub-foul'>-1</button>
+					</div>
+					<table class="displaytwo-timer">
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer1-minute"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer1-second" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					</table>
+					<table class="displaytwo-timer-button">
+					<tr class="child">
+						<td>
+							<button id="timer1-start">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button id="timer1-stop">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button id="timer1-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<table class="displaytwo-sc">
+					<tr>
+						<td>
+							<input type="number" 
+							id="sc1-seconds"
+							class="countdown-timer-num" 
+							placeholder="00" 
+							min="0" 
+							max='59'>
+						</td>
+					</tr>
+				</table>
+				<table class="child displaytwo-scbutton">
+					<tr class="child">
+						<td>
+							<button id="sc1-start">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button id="sc1-stop">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button id="sc1-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<div class="displaytwo-disp">
+					<button class="bb-button-num bb-button-display"
+						id = "displayOne1">H/s Players</button>
+					<button class="bb-button-num bb-button-display"
+						id = "displayTwo1">H/s Buttons</button>
+				</div>
+			</div>
+				</div>
+			</div>
+		<!-- BASKETBALL BUTTONS -->
+		<div class="child" id="displayThreediv">
+			<div class="bb-button-box blackbg whitetxt yellowbd">
+				<h3>Score Point</h3>
+				<div class="child">
+					<h4 class='bb-button-txt'>Add</h4>
+				</div>
+				<div class="child">
+					<h4 class='bb-button-txt'>Subtract</h4>
+				</div>
+				<div class="child">
+					<h4 class='bb-button-txt'>Fouls</h4>
+				</div>
+			<div>
+				<div class="child">
+					<h3 class="bb-button-txt">Home</h3>
+				</div>
+
+				<p class="child"> | </p>
+				<div class="child">
+					<button class="bb-button-num" 
+						onclick="haddOne()" 
+						id = 'home-add-one'>+1</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="haddTwo()" 
+						id = 'home-add-two'>+2</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="haddThree()"
+						id = 'home-add-three'>+3</button>
+				</div>
+
+				<p class="child"> | </p>
+				<div class="child">
+					<button class="bb-button-num" 
+						onclick="hsubOne()"
+						id = 'home-sub-one'>-1</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="hsubTwo()"
+						id = 'home-sub-two'>-2</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="hsubThree()"
+						id = 'home-sub-three'>-3</button>
+				</div>
+
+				<p class="child"> | </p>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="haddFoul()"
+						id = 'home-add-foul'>+1</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="hsubFoul()"
+						id = 'home-sub-foul'>-1</button>
+				</div>
+			</div>
+				<div class="child">
+					<h3 class="bb-button-txt">Guest</h3>
+			</div>
+
+				<p class="child"> | </p>
+				<div class="child">
+					<button class="bb-button-num" 
+						onclick="gaddOne()"
+						id = 'guest-add-one'>+1</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="gaddTwo()"
+						id = 'guest-add-two'>+2</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="gaddThree()"
+						id = 'guest-add-three'>+3</button>
+				</div>
+
+			<p class="child"> | </p>
+				<div class="child">
+					<button class="bb-button-num" 
+						onclick="gsubOne()"
+						id = 'guest-sub-one'>-1</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="gsubTwo()"
+						id = 'guest-sub-two'>-2</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="gsubThree()"
+						id = 'guest-sub-three'>-3</button>
+				</div>
+
+			<p class="child"> | </p>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="gaddFoul()"
+						id = 'guest-add-foul'>+1</button>
+				</div>
+				<div class="child">
+					<button class="bb-button-num"
+						onclick="gsubFoul()"
+						id = 'guest-sub-foul'>-1</button>
+				</div>
+			</div>
+
+				<div class="bb-button-box blackbg whitetxt yellowbd">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<h3 class="bb-button-txt">Timer</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr>
+						<td>
+							<button id="timer-start">Start</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="timer-stop">Stop</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="timer-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+				</div>
+
+				<div class="bb-button-box blackbg blacktxt yellowbd">
+				<table class='countdown-timer-box child'>
+					<tr>
+						<td class='blacktxt'>
+							<h3>Shot Clock</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" 
+							id="sc-seconds"
+							class="countdown-timer-num" 
+							placeholder="00" 
+							min="0" 
+							max='59'>
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>seconds</td>
+					</tr>
+				</table>
+				<table class="child">
+					<tr>
+						<td>
+							<button id="sc-start"
+								>Start</button>
+						</td>
+					</tr>
+					<td>
+						<td>
+							<button id="sc-stop">Stop</button>
+						</td>
+					</td>
+					<td>
+						<td>
+							<button id="sc-reset">Reset</button>
+						</td>
+					</td>
+					 <div class="bb-button-periodbox child">
+						<p class="whitetxt bb-button-displaytxt">Period</p>
+						<button class="bb-button-num"
+							onclick="paddOne()" 
+							id = "period-add">+1</button>
+						<button class="bb-button-num"
+							onclick="psubOne()" 
+							id = "period-sub">-1</button>
+					</div>
+					<div class="bb-button-period child">
+						<h4 class="whitetxt bb-button-display bb-button-displaytxt">Display</h4>
+						<button class="bb-button-num bb-button-display"
+						id = "displayOne">H/s Players</button>
+						<button class="bb-button-num bb-button-display"
+						id = "displayTwo">H/s Buttons</button>
+					</div>
+				</table>
+					<input type="text" 
+						name="save" 
+						class="countdown-timer-num bb-button-savetxt" 
+						placeholder="sport_sportname.excel">
+					<button class="whitebg bb-button-save">SAVE</button>
+				</div>
+				</table>
+
+				</div>
+			</div>
+		</div>
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chess e-scoreboard</title>
+	<link rel='stylesheet' href="chessclassic.css">
+	<link rel='stylesheet' href="../../index.css">
+</head>
+
+<body class ="blackbg blacktxt">
+
+		<!-- MENU OPTION -->
+
+	<header>
+		<nav class="relative">	
+			<div class="child leftnav">
+				<input type="checkbox" id="menu"/>
+				<label for="menu">
+					<img src="../../image/chessmenu.png" height="50px" width="50px">
+				</label>
+					<table class="menu">
+					<tr>
+						<td class="outmenu relative">
+							<input type="checkbox" id="outmenu" class="outdoor" />
+							<label for="pdmenu">
+								<span class="mainmenu">Outdoor</span>
+							</label>
+							<span class="outsubmenu bdln">
+								<a href="../../outdoor/badminton/badminton.html">Badminton</a>
+							</span>
+							<span class="outsubmenu bsln">
+								<a href="../../outdoor/baseball/baseball.html">Baseball / Softball</a>
+							</span>
+							<span class="outsubmenu bbln">
+								<a href="../../index.html">Basketball</a>
+							</span>
+							<span class="outsubmenu swln">
+								<a href="../../outdoor/swimming/swimming.html">Swimming</a>
+							</span>
+							<span class="outsubmenu scln">
+								<a href="../../outdoor/soccer/soccer.html">Soccer</a>
+							</span>
+							<span class="outsubmenu ttln">
+								<a href="../../outdoor/tabletennis/tabletennis.html">Table Tennis</a>
+							</span>
+							<span class="outsubmenu tln">
+								<a href="../../outdoor/tennis/tennis.html">Tennis</a>
+							</span>
+							<span class="outsubmenu vbln">
+								<a href="../../outdoor/volleyball/volleyball.html">Volleyball</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="inmenu relative">
+							<input type="checkbox" id="inmenu" class="indoor" />
+							<label for="inmenu">
+								<span class="mainmenu">Indoor</span>
+							</label>
+							<span class="insubmenu bwln">
+								<a href="../../indoor/bowling/bowling.html">Bowling</a>
+							</span>
+							<span class="insubmenu ckln">
+								<a href="../../indoor/checkers/checkers.html">Checkers</a>
+							</span>
+							<span class="insubmenu dln">
+								<a href="../../indoor/darts/darts.html">Darts</a>
+							</span>
+							<span class="insubmenu srln">
+								<a href="../../indoor/scrabble/scrabble.html">Scrabble</a>
+							</span>
+						</td>
+					</tr>
+					</table>
+				
+				
+			</div>
+			<div class="child rightnav">
+				<span>
+      				<a href="youtube link how to use / tutorial">About us</a>
+      			</span>
+				<span>
+					<a href="website to show members /out us">Tutorial</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+
+		<!-- TITLE OPTION -->
+
+	<div class="container-box">
+		<h1 class='title-chess bluebd whiteshadowtxt'>Chess</h1>
+		<button class='title-chess bluebd whiteshadowtxt' 
+			id="button-title">Classic</button>
+
+	<div class="parent">
+
+		<!-- CHESS PLAYERS -->
+
+		<div class='child' id="displayOnediv">
+				<div class="ch-player-display bluebd bluebg whitetxt">
+					<h2 class="blackshadowtxt yello">Chess Players</h2>
+
+					<div class='ch-player-grid clearfix'>
+						<div class='ch-player bluebd'>
+							<h4 class="ch-player-txt blackshadowtxt">Name</h4>
+							
+								<input type="text" 
+								id='ch-player1-name' 
+								placeholder="Player 1">
+							<p id='ch1-eliminate' class='choneEliminate ch1-redmark'>
+							</p>
+
+							<input type="text" 
+								id='ch-player2-name' 
+								placeholder="Player 2">
+							<p id='ch2-eliminate' class='chtwoEliminate ch2-redmark'>
+							</p>
+
+							<input type="text" 
+								id='ch-player3-name' 
+								placeholder="Player 3">
+							<p id='ch3-eliminate' class='chthreeEliminate ch3-redmark'>
+							</p>
+
+							<input type="text" 
+								id='ch-player4-name' 
+								placeholder="Player 4">
+							<p id='ch4-eliminate' class='chfourEliminate ch4-redmark'>
+							</p>
+
+							<input type="text" 
+								id='ch-player5-name' 
+								placeholder="Player 5">
+							<p id='ch5-eliminate' class='chfiveEliminate ch5-redmark'>
+							</p>
+
+							<input type="text" 
+								id='ch-player6-name' 
+								placeholder="Player 6">
+							<p id='ch6-eliminate' class='chsixEliminate ch6-redmark'>
+							</p>
+
+							<input type="text" 
+								id='ch-player7-name' 
+								placeholder="Player 7">
+							<p id='ch7-eliminate' class='chsevenEliminate ch7-redmark'>
+							</p>
+
+							<input type="text" 
+								id='ch-player8-name' 
+								placeholder="Player 8">
+							<p id='ch8-eliminate' class='cheightEliminate ch8-redmark'>
+							</p>
+						</div>
+						<div class='ch-subplayer bluebd indianredtxt'>
+							<h4 class="ch-player-txt blackshadowtxt">Elo</h4>
+							<input type="text" 
+								id='ch-player1-elo' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player2-elo' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player3-elo' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player4-elo' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player5-elo' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player6-elo' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player7-elo' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player8-elo' 
+								placeholder="0">
+
+						</div>
+						<div class='ch-subplayer bluebd'>
+							<h4 class="ch-player-txt blackshadowtxt">Score</h4>
+							<input type="text" 
+								id='ch-player1-score' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player2-score' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player3-score' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player4-score' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player5-score' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player6-score' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player7-score' 
+								placeholder="0">
+
+							<input type="text" 
+								id='ch-player8-score' 
+								placeholder="0">
+
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CHESS SCORING -->
+
+		<div class="child cadetbluebg yellowbd ch-score-box roundborder" 
+			id='displayThreediv'>
+
+			<h3 class="ch-player-vs lightyellowbg blackbd">vs</h3>
+
+			<div class="child lightyellowbg ch-player-margin">
+				<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+					id='ch-game-display'>G2 d0</h2>
+			</div>
+			<div class="child lightyellowbg ch-player-margin">
+				<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+					id='ch-under-elo'>U1200</h2>
+			</div>
+
+	<!-- PLAYER X DISPLAY -->	
+		<div>
+			<div class="child">
+				<div id="player1-vs" class="chVs">
+					<div class="ch-playerx-margin">		
+						<div class="child lightyellowbg roundborder blackbd">
+								<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+									id='ch-playerx1-score'>0</h2>
+						</div>
+					</div>
+					<div class="ch-playerx-margin">
+						<div class="child lightyellowbg blackbd">
+								<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+									id='ch-playerx1-name'>Player 1
+								</h2>
+								<img src ="../../image/white-king.png" 
+									class="child ch-image" 
+									alt ="white" 
+									width ='40' 
+									height ='40'>
+								<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+									id='ch-playerx1-elo'>Elo</h3>
+						</div>
+					</div>
+					<div id="player1-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="choneAdd(this)" 
+									id="chponeAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="choneAddhalf(this)"
+									id="chponeAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="choneSub(this)"
+									id="chponeSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="choneSubhalf(this)"
+									id="chponeSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayeroneRed">
+									<option value="ch1-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="choneReset()" 
+									id='chx1-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+				</div>
+
+			<div id="player2-vs" class="chVs">
+				<div class="ch-playerx-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playerx2-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playerx-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playerx2-name'>Player 2
+							</h2>
+							<img src ="../../image/white-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='ch-playerx2-elo'>Elo</h3>
+					</div>
+				</div>
+				<div id="player2-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="chtwoAdd(this)" 
+									id="chptwoAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="chtwoAddhalf(this)"
+									id="chptwoAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="chtwoSub(this)"
+									id="chptwoSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="chtwoSubhalf(this)"
+									id="chptwoSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayertwoRed">
+									<option value="ch2-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="chtwoReset()"
+									id='chx2-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player3-vs" class="chVs">
+				<div class="ch-playerx-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playerx3-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playerx-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playerx3-name'>Player 3
+							</h2>
+							<img src ="../../image/white-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='ch-playerx3-elo'>Elo</h3>
+					</div>
+				</div>
+				<div id="player3-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="chthreeAdd(this)" 
+									id="chpthreeAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="chthreeAddhalf(this)"
+									id="chpthreeAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="chthreeSub(this)"
+									id="chpthreeSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="chthreeSubhalf(this)"
+									id="chpthreeSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayerthreeRed">
+									<option value="ch3-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="chthreeReset()" 
+									id='chx3-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player4-vs" class="chVs">
+				<div class="ch-playerx-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playerx4-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playerx-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playerx4-name'>Player 4
+							</h2>
+							<img src ="../../image/white-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='ch-playerx4-elo'>Elo</h3>
+					</div>
+				</div>
+				<div id="player4-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="chfourAdd(this)" 
+									id="chpfourAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="chfourAddhalf(this)"
+									id="chpfourAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="chfourSub(this)"
+									id="chpfourSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="chfourSubhalf(this)"
+									id="chpfourSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayerfourRed">
+									<option value="ch4-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="chfourReset()"
+									id='chx4-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player5-vs" class="chVs">
+				<div class="ch-playerx-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playerx5-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playerx-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playerx5-name'>Player 5
+							</h2>
+							<img src ="../../image/white-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='ch-playerx5-elo'>Elo</h3>
+					</div>
+				</div>
+				<div id="player5-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="chfiveAdd(this)" 
+									id="chpfiveAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="chfiveAddhalf(this)"
+									id="chpfiveAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="chfiveSub(this)"
+									id="chpfiveSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="chfiveSubhalf(this)"
+									id="chpfiveSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayerfiveRed">
+									<option value="ch5-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="chfiveReset()"
+									id='chx5-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player6-vs" class="chVs">
+				<div class="ch-playerx-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playerx6-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playerx-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playerx6-name'>Player 6
+							</h2>
+							<img src ="../../image/white-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='ch-playerx6-elo'>Elo</h3>
+					</div>
+				</div>
+				<div id="player6-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="chsixAdd(this)" 
+									id="chpsixAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="chsixAddhalf(this)"
+									id="chpsixAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="chsixSub(this)"
+									id="chpsixSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="chsixSubhalf(this)"
+									id="chpsixSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayersixRed">
+									<option value="ch6-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="chsixReset()"
+									id='chx6-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player7-vs" class="chVs">
+				<div class="ch-playerx-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playerx7-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playerx-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playerx7-name'>Player 7
+							</h2>
+							<img src ="../../image/white-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='ch-playerx7-elo'>Elo</h3>
+					</div>
+				</div>
+				<div id="player7-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="chsevenAdd(this)" 
+									id="chpsevenAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="chsevenAddhalf(this)"
+									id="chpsevenAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="chsevenSub(this)"
+									id="chpsevenSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="chsevenSubhalf(this)"
+									id="chpsevenSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayersevenRed">
+									<option value="ch7-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="chsevenReset()"
+									id='chx7-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player8-vs" class="chVs">
+				<div class="ch-playerx-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playerx8-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playerx-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playerx8-name'>Player 8
+							</h2>
+							<img src ="../../image/white-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playerx-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id='ch-playerx8-elo'>Elo</h3>
+					</div>
+				</div>
+				<div id="player8-vs" class="chtwoData">
+						<p>						
+							<div>
+								<button class="ch-display2one-button blacktxt child" 
+									onclick="cheightAdd(this)" 
+									id="chpeightAddone">+1</button>
+								<button class="ch-display2one2-button blacktxt child"
+									onclick="cheightAddhalf(this)"
+									id="chpeightAddhalf">+0.5</button>
+								<button class="ch-display2one-buttontwo blacktxt child"
+									onclick="cheightSub(this)"
+									id="chpeightSubone">-1</button>
+								<button class="ch-display2one2-buttontwo blacktxt child"
+									onclick="cheightSubhalf(this)"
+									id="chpeightSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2one-eli blacktxt child"
+									id="chplayereightRed">
+									<option value="ch8-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2one-res blacktxt child"
+									onclick="cheightReset()"
+									id='chx8-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+		</div>
+
+			
+
+		<div class="child">
+			<div id="player1-vs1" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery1-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery1-name'>Player 1
+							</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery1-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player1-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="choneAdd(this)" 
+									id="chponeAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="choneAddhalf(this)"
+									id="chponeAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="choneSub(this)"
+									id="chponeSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="choneSubhalf(this)"
+									id="chponeSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayeroneRed">
+									<option value="ch1-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="choneReset()"
+									id='chy1-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+			<div id="player2-vs2" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery2-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery2-name'>Player 2
+							</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery2-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player2-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="chtwoAdd(this)" 
+									id="chptwoAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="chtwoAddhalf(this)"
+									id="chptwoAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="chtwoSub(this)"
+									id="chptwoSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="chtwoSubhalf(this)"
+									id="chptwoSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayertwoRed">
+									<option value="ch2-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="chtwoReset()"
+									id='chy2-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player3-vs3" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery3-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery3-name'>Player 3
+							</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery3-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player3-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="chthreeAdd(this)" 
+									id="chpthreeAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="chthreeAddhalf(this)"
+									id="chpthreeAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="chthreeSub(this)"
+									id="chpthreeSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="chthreeSubhalf(this)"
+									id="chpthreeSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayerthreeRed">
+									<option value="ch3-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="chthreeReset()"
+									id='chy3-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player4-vs4" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery4-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery4-name'>Player 4
+							</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery4-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player4-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="chfourAdd(this)" 
+									id="chpfourAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="chfourAddhalf(this)"
+									id="chpfourAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="chfourSub(this)"
+									id="chpfourSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="chfourSubhalf(this)"
+									id="chpfourSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayerfourRed">
+									<option value="ch4-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="chfourReset()"
+									id='chy4-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player5-vs5" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery5-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery5-name'>Player 5
+							</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery5-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player5-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="chfiveAdd(this)" 
+									id="chpfiveAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="chfiveAddhalf(this)"
+									id="chpfiveAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="chfiveSub(this)"
+									id="chpfiveSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="chfiveSubhalf(this)"
+									id="chpfiveSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayerfiveRed">
+									<option value="ch5-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="chfiveReset()"
+									id='chy5-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player6-vs6" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery6-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery6-name'>Player 6
+							</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery6-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player6-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="chsixAdd(this)" 
+									id="chpsixAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="chsixAddhalf(this)"
+									id="chpsixAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="chsixSub(this)"
+									id="chpsixSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="chsixSubhalf(this)"
+									id="chpsixSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayersixRed">
+									<option value="ch6-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="chsixReset()"
+									id='chy6-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player7-vs7" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery7-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery7-name'>Player 7
+							</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery7-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player7-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="chsevenAdd(this)" 
+									id="chpsevenAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="chsevenAddhalf(this)"
+									id="chpsevenAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="chsevenSub(this)"
+									id="chpsevenSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="chsevenSubhalf(this)"
+									id="chpsevenSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayersevenRed">
+									<option value="ch7-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="chsevenReset()"
+									id='chy7-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+
+			<div id="player8-vs8" class="chVstwo">
+				<div class="ch-playery-margin">		
+					<div class="child lightyellowbg roundborder blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt"
+								id='ch-playery8-score'>0</h2>
+					</div>
+				</div>
+				<div class="ch-playery-margin">
+					<div class="child lightyellowbg blackbd">
+							<h2 class="ch-score-txt yellowtxt blackshadowtxt child" 
+								id='ch-playery8-name'>Player 8
+						</h2>
+							<img src ="../../image/black-king.png" 
+								class="child ch-image" 
+								alt ="white" 
+								width ='40' 
+								height ='40'>
+							<h3 class="ch-playery-elo roundborder yellowtxt blackshadowtxt child lightyellowbg blackbd"
+								id="ch-playery8-elo">Elo</h3>
+					</div>
+				</div>
+				<div id="player8-vs" class="chtwoData2">
+						<p>						
+							<div>
+								<button class="ch-display2two-button blacktxt child" 
+									onclick="cheightAdd(this)" 
+									id="chpeightAddone">+1</button>
+								<button class="ch-display2two2-button blacktxt child"
+									onclick="cheightAddhalf(this)"
+									id="chpeightAddhalf">+0.5</button>
+								<button class="ch-display2two-buttontwo blacktxt child"
+									onclick="cheightSub(this)"
+									id="chpeightSubone">-1</button>
+								<button class="ch-display2two2-buttontwo blacktxt child"
+									onclick="cheightSubhalf(this)"
+									id="chpeightSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing ch-display2two-eli blacktxt child"
+									id="chplayereightRed">
+									<option value="ch8-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing ch-display2two-res blacktxt child"
+									onclick="cheightReset()"
+									id='chy8-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<input type="text" class="ch-sport-name lightyellowbg whitetxt blackshadowtxt yellowbd">
+				<div class="ch-score-dropdown">
+						<select class="ch-display2one blacktxt child"
+							id="chplayerVsone1">
+							<option id="ch-playerx1" 
+								value="player1-vs">Player 1</option>
+							<option id="ch-playerx2" 
+								value="player2-vs">Player 2</option>
+							<option id="ch-playerx3" 
+								value="player3-vs">Player 3</option>
+							<option id="ch-playerx4" 
+								value="player4-vs">Player 4</option>
+							<option id="ch-playerx5" 
+								value="player5-vs">Player 5</option>
+							<option id="ch-playerx6" 
+								value="player6-vs">Player 6</option>
+							<option id="ch-playerx7" 
+								value="player7-vs">Player 7</option>
+							<option id="ch-playerx8" 
+								value="player8-vs">Player 8</option>
+						</select>
+					</div>	
+
+					<div class="ch-score-dropdown">
+						<select class="ch-display2two blacktxt"
+							id="chplayerVstwo1">
+							<option id="ch-playery1" 
+								value="player1-vs1">Player 1</option>
+							<option id="ch-playery2" 
+								value="player2-vs2">Player 2</option>
+							<option id="ch-playery3" 
+								value="player3-vs3">Player 3</option>
+							<option id="ch-playery4" 
+								value="player4-vs4">Player 4</option>
+							<option id="ch-playery5" 
+								value="player5-vs5">Player 5</option>
+							<option id="ch-playery6" 
+								value="player6-vs6">Player 6</option>
+							<option id="ch-playery7" 
+								value="player7-vs7">Player 7</option>
+							<option id="ch-playery8" 
+								value="player8-vs8">Player 8</option>
+						</select>
+					</div>
+				<div class="chDisplay">
+					<button class="ch-button-editgd blacktxt"
+						onclick="editGamedelay()" 
+						id='edit-game-delay'>Edit Game/Delay</button>
+					<button class="ch-button-elo blacktxt"
+						onclick="editUnderelo()" 
+						id='edit-under-elo'>Edit Under Elo</button>
+
+					<button class="display-one blacktxt"
+						id='displayOne1'>H/S Plyrs</button>
+					<button class="display-two blacktxt"
+						id='displayTwo1'>H/S Btns</button>
+				</div>
+
+	</div>
+
+		<!-- CHESS BUTTONS -->
+		<div class="child whitetxt bluebd blackbg" id='displayTwodiv'>
+			<div class="child">
+
+				<div class="ch-wrapper ch-vs-player">
+
+					<div class="ch-score-dropdown child">
+						<div class="child">
+							<h3>vs:</h3>
+						</div>
+						<select class="blacktxt child"
+							id="chplayerVsone">
+							<option id="ch1-playerx1" 
+								value="player1-vs">Player 1</option>
+							<option id="ch1-playerx2" 
+								value="player2-vs">Player 2</option>
+							<option id="ch1-playerx3" 
+								value="player3-vs">Player 3</option>
+							<option id="ch1-playerx4" 
+								value="player4-vs">Player 4</option>
+							<option id="ch1-playerx5" 
+								value="player5-vs">Player 5</option>
+							<option id="ch1-playerx6" 
+								value="player6-vs">Player 6</option>
+							<option id="ch1-playerx7" 
+								value="player7-vs">Player 7</option>
+							<option id="ch1-playerx8" 
+								value="player8-vs">Player 8</option>
+						</select>
+					</div>
+
+				</div>
+			</div>
+			<div class="child">
+
+				<div class="ch-wrapper ch-vs-player">
+
+					<div class="ch-score-dropdown">
+						<select class="blacktxt"
+							id="chplayerVstwo">
+							<option id="ch1-playery1" 
+								value="player1-vs1">Player 1</option>
+							<option id="ch1-playery2" 
+								value="player2-vs2">Player 2</option>
+							<option id="ch1-playery3" 
+								value="player3-vs3">Player 3</option>
+							<option id="ch1-playery4" 
+								value="player4-vs4">Player 4</option>
+							<option id="ch1-playery5" 
+								value="player5-vs5">Player 5</option>
+							<option id="ch1-playery6" 
+								value="player6-vs6">Player 6</option>
+							<option id="ch1-playery7" 
+								value="player7-vs7">Player 7</option>
+							<option id="ch1-playery8" 
+								value="player8-vs8">Player 8</option>
+						</select>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- DROPDOWN SCORE FOR: -->
+			<div class="bluebd">
+
+				<div class="ch-wrapper">
+					<h3 class="child ch-button-margin">Score for:</h3>
+					<div class="ch-score-dropdown">
+						<select class="blacktxt child"
+							id="chplayerName">
+							<option value="player1-num" 
+								id="ch-player1">Player 1</option>
+							<option value="player2-num" 
+								id="ch-player2">Player 2</option>
+							<option value="player3-num" 
+								id="ch-player3">Player 3</option>
+							<option value="player4-num" 
+								id="ch-player4">Player 4</option>
+							<option value="player5-num" 
+								id="ch-player5">Player 5</option>
+							<option value="player6-num" 
+								id="ch-player6">Player 6</option>
+							<option value="player7-num" 
+								id="ch-player7">Player 7</option>
+							<option value="player8-num" 
+								id="ch-player8">Player 8</option>
+						</select>
+					</div>
+				
+			<!-- DROPDOWN "SCORE FOR:" CONTENT -->
+				<div class="ch-score-content">
+
+					<div id="player1-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child" 
+									onclick="choneAdd(this)" 
+									id="chponeAddone">+1</button>
+								<button class="blacktxt child"
+									onclick="choneAddhalf(this)"
+									id="chponeAddhalf">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="choneSub(this)"
+									id="chponeSubone">-1</button>
+								<button class="blacktxt child"
+									onclick="choneSubhalf(this)"
+									id="chponeSubhalf">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayeroneRed">
+									<option value="ch1-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="choneReset()" 
+									id='ch1-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+
+					<div id="player2-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child"
+									onclick="chtwoAdd(this)" 
+									id="chp2-add-one">+1</button>
+								<button class="blacktxt child"
+									onclick="chtwoAddhalf(this)" 
+									id="chp2-add-half">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="chtwoSub(this)" 
+									id="chp2-sub-one">-1</button>
+								<button class="blacktxt child"
+									onclick="chtwoSubhalf(this)" 
+									id="chp2-sub-half">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayertwoRed">
+									<option value="ch2-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="chtwoReset()" 
+									id='ch2-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+
+					<div id="player3-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child"
+									onclick="chthreeAdd(this)" 
+									id="chp3-add-one">+1</button>
+								<button class="blacktxt child"
+									onclick="chthreeAddhalf(this)" 
+									id="chp3-add-half">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="chthreeSub(this)"
+									id="chp3-sub-one">-1</button>
+								<button class="blacktxt child"
+									onclick="chthreeSubhalf(this)" 
+									id="chp3-sub-half">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayerthreeRed">
+									<option value="ch3-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="chthreeReset()"
+									id='ch3-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+
+					<div id="player4-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child"
+									onclick="chfourAdd(this)"
+									id="chp4-add-one">+1</button>
+								<button class="blacktxt child"
+									onclick="chfourAddhalf(this)"
+									id="chp4-add-half">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="chfourSub(this)"
+									id="chp4-sub-one">-1</button>
+								<button class="blacktxt child"
+									onclick="chfourSubhalf(this)"
+									id="chp4-sub-half">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayerfourRed">
+									<option value="ch4-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="chfourReset()"
+									id='ch4-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+
+					<div id="player5-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child"
+									onclick="chfiveAdd(this)"
+									id="chp5-add-one">+1</button>
+								<button class="blacktxt child"
+									onclick="chfiveAddhalf(this)"
+									id="chp5-add-half">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="chfiveSub(this)"
+									id="chp5-sub-one">-1</button>
+								<button class="blacktxt child"
+									onclick="chfiveSubhalf(this)"
+									id="chp5-sub-half">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayerfiveRed">
+									<option value="ch5-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+									</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="chfiveReset()"
+									id='ch5-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+
+					<div id="player6-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child"
+									onclick="chsixAdd(this)" 
+									id="chp6-add-one">+1</button>
+								<button class="blacktxt child"
+									onclick="chsixAddhalf(this)" 
+									id="chp6-add-half">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="chsixSub(this)" 
+									id="chp6-sub-one">-1</button>
+								<button class="blacktxt child"
+									onclick="chsixSubhalf(this)" 
+									id="chp6-sub-half">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayersixRed">	
+									<option value="ch6-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+									</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="chsixReset()"
+									id='ch6-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+
+					<div id="player7-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child"
+									onclick="chsevenAdd(this)"
+									id="chp7-add-one">+1</button>
+								<button class="blacktxt child"
+									onclick="chsevenAddhalf(this)"
+									id="chp7-add-half">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="chsevenSub(this)"
+									id="chp7-sub-one">-1</button>
+								<button class="blacktxt child"
+									onclick="chsevenSubhalf(this)"
+									id="chp7-sub-half">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayersevenRed">
+									<option value="ch7-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="chsevenReset()"
+									id='ch7-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+
+					<div id="player8-num" class="chData">
+						<p>
+							<b>
+								<h3 class="ch-button-spacing child">Add</h3>
+								<h3 class="ch-button-spacing child">Sub</h3>
+							</b>
+							<div>
+								<button class="blacktxt child"
+									onclick="cheightAdd(this)"
+									id="chp8-add-one">+1</button>
+								<button class="blacktxt child"
+									onclick="cheightAddhalf(this)"
+									id="chp8-add-half">+0.5</button>
+								<p class="child"> | </p>
+								<button class="blacktxt child"
+									onclick="cheightSub(this)"
+									id="chp8-sub-one">-1</button>
+								<button class="blacktxt child"
+									onclick="cheightSubhalf(this)"
+									id="chp8-sub-half">-0.5</button>
+							</div>
+							<div>
+								<button class="ch-button-spacing blacktxt child"
+									id="chplayereightRed">
+									<option value="ch8-eliminate" 
+										class="ch-eliminate">Eliminate</option>
+								</button>
+								<button class="ch-button-spacing blacktxt child"
+									onclick="cheightReset()"
+									id='ch8-reset'>Reset</button>
+							</div>
+						</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="bluebd">
+				<h3>Layout:</h3>
+				<button class="blacktxt"
+					onclick="editGamedelay()" 
+					id='edit-game-delay'>Edit Game/Delay</button>
+				<button class="blacktxt"
+					onclick="editUnderelo()" 
+					id='edit-under-elo'>Edit Under Elo</button>
+			</div>
+			<div class="bluebd">
+				<h3>Display:</h3>
+				<button class="blacktxt child"
+					id='displayOne'>H/S Players</button>
+				<button class="blacktxt child"
+					id='displayTwo'>H/S Buttons</button>
+			<div class="bluebd">
+				<button class="blacktxt child">
+					<img src ="../../image/undo.png" 
+						alt ="menu" 
+						width ='20' 
+						height ='20'>
+				</button>
+				<button class="blacktxt child">
+					<img src ="../../image/redo.png" 
+						alt ="menu" 
+						width ='20' 
+						height ='20'>
+				</button>
+				<div>
+					<div class="child">
+						<input type="text" 
+							placeholder="sport_sportname.excel"
+							class="whitetxt blackbg"
+							size="30"
+							maxlength="30">
+					</div>
+					<div class="child">
+						<button class="blacktxt">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="../../jquery.js"></script>
+<script src = "chessclassic.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Tennis e-scoreboard</title>
+	<link rel='stylesheet' href="tabletennis.css">
+	<link rel='stylesheet' href="../../index.css">
+</head>
+
+<body class="blackbg">
+
+		<!-- MENU OPTION -->
+
+	<header>
+		<nav class="relative">	
+			<div class="child leftnav">
+				<input type="checkbox" id="menu"/>
+				<label for="menu">
+					<img src="image/tabletennismenu.png" height="20px" width="20px">
+				</label>
+					<table class="menu">
+					<tr>
+						<td class="outmenu relative">
+							<input type="checkbox" id="outmenu" class="outdoor" />
+							<label for="outmenu">
+								<span class="mainmenu">Outdoor</span>
+							</label>
+							<span class="outsubmenu bdln">
+								<a href="../../outdoor/badminton/badminton.html">Badminton</a>
+							</span>
+							<span class="outsubmenu bsln">
+								<a href="../../outdoor/baseball/baseball.html">Baseball / Softball</a>
+							</span>
+							<span class="outsubmenu bbln">
+								<a href="../../index.html">Basketball</a>
+							</span>
+							<span class="outsubmenu swln">
+								<a href="../../outdoor/swimming/swimming.html">Swimming</a>
+							</span>
+							<span class="outsubmenu scln">
+								<a href="../../outdoor/soccer/soccer.html">Soccer</a>
+							</span>
+							<span class="outsubmenu tln">
+								<a href="../../outdoor/tennis/tennis.html">Tennis</a>
+							</span>
+							<span class="outsubmenu vbln">
+								<a href="../../outdoor/volleyball/volleyball.html">Volleyball</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="inmenu relative">
+							<input type="checkbox" id="inmenu" class="indoor" />
+							<label for="inmenu">
+								<span class="mainmenu">Indoor</span>
+							</label>
+							<span class="insubmenu bwln">
+								<a href="../../indoor/bowling/bowling.html">Bowling</a>
+							</span>
+							<span class="insubmenu ckln">
+								<a href="../../indoor/checkers/checkers.html">Checkers</a>
+							</span>
+							<span class="insubmenu chln">
+								<a href="../../indoor/chess/chess.html">Chess</a>
+							</span>
+							<span class="insubmenu dln">
+								<a href="../../indoor/darts/darts.html">Darts</a>
+							</span>
+							<span class="insubmenu srln">
+								<a href="../../indoor/scrabble/scrabble.html">Scrabble</a>
+							</span>
+						</td>
+					</tr>
+					</table>
+				
+				
+			</div>
+			<div class="child rightnav">
+				<span>
+      				<a href="youtube link how to use / tutorial">About us</a>
+      			</span>
+				<span>
+					<a href="website to show members /out us">Tutorial</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+
+	<!-- TITLE OPTION -->
+
+	<div class="container-box">
+		<h1 class='title-tabletennis bluebd whiteshadowtxt'>Table Tennis</h1>
+		<button class='title-tabletennis bluebd whiteshadowtxt' 
+			id="button-title">Two Players</button>
+
+	<div class="parent">
+		<div class='child' id="displayOnediv">
+				<div class="tt-player-display yellowbd blackbg whitetxt">
+					<input type="text"
+						class="blacktxt yellowshadowtxt" 
+						id='teamA' 
+						size="35" 
+						placeholder="Team A">
+
+					<div class='tt-player-grid clearfix'>
+						<div class='tt-teama-player'>
+
+							<input type="text" 
+								id='tt-teama-player1' 
+								placeholder="Team A Player 1">
+							<p class="tt-playersub-box yellowbd">
+							</p>
+							<input type="text" 
+								id='tt-teama-player4' 
+								placeholder="Team A Player 2">
+							<p class="tt-playersub-box yellowbd">
+							</p>
+						</div>
+					
+					</div>
+				</div>
+
+				<div class="tt-player-display bluebd blackbg whitetxt">
+					<input type="text"
+						class="whitetxt blueshadowtxt" 
+						id='teamB' 
+						size="35" 
+						placeholder="Team B">	
+
+					<div class='tt-player-grid clearfix' id='blueborder'>
+						<div class='tt-teamb-player'>
+
+							<input type="text" 
+								id='tt-teamb-player1' 
+								placeholder="Team B Player 1">
+							<p class="tt-playersub-box bluebd">
+							</p>
+							<input type="text" 
+								id='tt-teamb-player4' 
+								placeholder="Team B Player 2">
+							<p class="tt-playersub-box bluebd">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- TABLE TENNIS SCORING -->
+			<div class="child relative">
+				<div class="tt-scoring-box indianredbg">
+				<div>
+					<h1 class="ctfont tt-scoring-num blackbg whitetxt redshadowtxt"
+						id="countdownTimer-box">00:00</h1>
+				<div class="child"  id="setOne">
+					<div>
+					<div>
+						<h4 class="tt-scoringa-set whitebg child blacktxt yellowshadowtxt">Set</h4>
+						<h3 class="tt-scoringa child lightgraybg blacktxt yellowshadowtxt"
+							id="nameaOne">Team A</h3>
+						<h3 class="tt-scoringb child lightgraybg whitetxt blueshadowtxt"
+							id="namebOne">Team B</h3>
+						<h4 class="tt-scoringb-set whitebg child whitetxt blueshadowtxt">Set</h4>
+					</div>
+					<div id="displayTwobtn1">
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="aaddOne()"  
+						id = 'teama1-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt"
+						onclick="asubOne()" 
+						id = 'teama1-sub-one1'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="baddOne()" 
+						id = 'teamb1-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt" 
+						onclick="bsubOne()"
+						id = 'teamb1-sub-one1'>-1</button>
+					<button class="tt-button-num absolute blacktxt child"
+						id='displaysetOne1'>H/S 1</button>
+					</div>
+					</div>	
+					</div>
+					<div>
+						<h1 class="tt-scoringa tt-scoringa-setnum child redbg blacktxt yellowshadowtxt">1</h1>
+						<h1 class="ctfont tt-scoringa-num child blackbg blacktxt yellowshadowtxt"
+							id="scoreaOne">00</h1>
+						<h1 class="ctfont tt-scoringb-num child blackbg whitetxt blueshadowtxt"
+							id="scorebOne">00</h1>
+						<h1 class="tt-scoringb tt-scoringa-setnum child redbg whitetxt blueshadowtxt">1</h1>
+					</div>	
+				</div>
+				<div class="child" id="setTwo">
+					<div>
+					<div>
+						<h4 class="tt-scoringa-set whitebg child blacktxt yellowshadowtxt">Set</h4>
+						<h3 class="tt-scoringa child lightgraybg blacktxt yellowshadowtxt"
+							id='nameaTwo'>Team A</h3>
+						<h3 class="tt-scoringb child lightgraybg whitetxt blueshadowtxt"
+							id='namebTwo'>Team B</h3>
+						<h4 class="tt-scoringb-set whitebg child whitetxt blueshadowtxt">Set</h4>
+					</div>	
+					<div id="displayTwobtn2">
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a1addOne()"  
+						id = 'teama2-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a1subOne()" 
+						id = 'teama2-sub-one1'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="b1addOne()" 
+						id = 'teamb2-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt" 
+						onclick="b1subOne()"
+						id = 'teamb2-sub-one1'>-1</button>
+					<button class="tt-button-num absolute blacktxt child"
+						id='displaysetTwo1'>H/S 2</button>
+					</div>
+					</div>
+					</div>
+					<div>
+						<h1 class="tt-scoringa tt-scoringa-setnum child redbg blacktxt yellowshadowtxt">2</h1>
+						<h1 class="ctfont tt-scoringa-num child blackbg blacktxt yellowshadowtxt"
+							id='scoreaTwo'>00</h1>
+						<h1 class="ctfont tt-scoringb-num child blackbg whitetxt blueshadowtxt"
+							id='scorebTwo'>00</h1>
+						<h1 class="tt-scoringb tt-scoringa-setnum child redbg whitetxt blueshadowtxt">2</h1>
+					</div>	
+				</div>
+				</div>
+				<div>
+				<div class="child tt-top-minus" id="setThree">
+					<div>
+					<div>
+						<h4 class="tt-scoringa-set whitebg child blacktxt yellowshadowtxt">Set</h4>
+						<h3 class="tt-scoringa child lightgraybg blacktxt yellowshadowtxt"
+							id="nameaThree">Team A</h3>
+						<h3 class="tt-scoringb child lightgraybg whitetxt blueshadowtxt"
+							id="namebThree">Team B</h3>
+						<h4 class="tt-scoringb-set whitebg child whitetxt blueshadowtxt">Set</h4>
+					</div>	
+					<div>
+						<h1 class="tt-scoringa tt-scoringa-setnum child redbg blacktxt yellowshadowtxt">3</h1>
+						<h1 class="ctfont tt-scoringa-num child blackbg blacktxt yellowshadowtxt"
+							id="scoreaThree">00</h1>
+						<h1 class="ctfont tt-scoringb-num child blackbg whitetxt blueshadowtxt"
+							id="scorebThree">00</h1>
+						<h1 class="tt-scoringb tt-scoringa-setnum child redbg whitetxt blueshadowtxt">3</h1>
+					</div>	
+					<div id="displayTwobtn3">
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a2addOne()"  
+						id = 'teama3-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a2subOne()" 
+						id = 'teama3-sub-one1'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="b2addOne()" 
+						id = 'teamb3-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt" 
+						onclick="b2subOne()"
+						id = 'teamb3-sub-one1'>-1</button>
+					<button class="tt-button-num absolute blacktxt child"
+						id='displaysetThree1'>H/S 3</button>
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="child tt-top-minus" id="setFour">
+					<div>
+					<div>
+						<h4 class="tt-scoringa-set whitebg child blacktxt yellowshadowtxt">Set</h4>
+						<h3 class="tt-scoringa child lightgraybg blacktxt yellowshadowtxt"
+							id="nameaFour">Team A</h3>
+						<h3 class="tt-scoringb child lightgraybg whitetxt blueshadowtxt"
+							id="namebFour">Team B</h3>
+						<h4 class="tt-scoringb-set whitebg child whitetxt blueshadowtxt">Set</h4>
+					</div>	
+					<div>
+						<h1 class="tt-scoringa tt-scoringa-setnum child redbg blacktxt yellowshadowtxt">4</h1>
+						<h1 class="ctfont tt-scoringa-num child blackbg blacktxt yellowshadowtxt"
+							id="scoreaFour">00</h1>
+						<h1 class="ctfont tt-scoringb-num child blackbg whitetxt blueshadowtxt"
+							id="scorebFour">00</h1>
+						<h1 class="tt-scoringb tt-scoringa-setnum child redbg whitetxt blueshadowtxt">4</h1>
+					</div>
+					<div id="displayTwobtn4">
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a3addOne()"  
+						id = 'teama4-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a3subOne()" 
+						id = 'teama4-sub-one1'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="b3addOne()" 
+						id = 'teamb4-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt" 
+						onclick="b3subOne()"
+						id = 'teamb4-sub-one1'>-1</button>
+					<button class="tt-button-num absolute blacktxt child"
+						id='displaysetFour1'>H/S 4</button>
+					</div>	
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="child relative">
+					<h2 class="tt-scoring-txt blacktxt yellowshadowtxt">Serving</h2>
+					<button class="bluebg
+							tt-teama-serving"
+							id="teama-serve-off">_</button>
+					<button class="redbg
+							tt-teama-serving"
+							id="teama-serve-on">_</button>
+				</div>
+				<div class="child tt-top-minus" id="setFive">
+					<div>
+					<div>
+						<h4 class="tt-scoringa-set whitebg child blacktxt yellowshadowtxt">Set</h4>
+						<h3 class="tt-scoringa child lightgraybg blacktxt yellowshadowtxt"
+							id="nameaFive">Team A</h3>
+						<h3 class="tt-scoringb child lightgraybg whitetxt blueshadowtxt"
+							id="namebFive">Team B</h3>
+						<h4 class="tt-scoringb-set whitebg child whitetxt blueshadowtxt">Set</h4>
+					</div>	
+					<div>
+						<h1 class="tt-scoringa tt-scoringa-setnum child redbg blacktxt yellowshadowtxt">5</h1>
+						<h1 class="ctfont tt-scoringa-num child blackbg blacktxt yellowshadowtxt"
+							id="scoreaFive">00</h1>
+						<h1 class="ctfont tt-scoringb-num child blackbg whitetxt blueshadowtxt"
+							id="scorebFive">00</h1>
+						<h1 class="tt-scoringb tt-scoringa-setnum child redbg whitetxt blueshadowtxt">5</h1>
+					</div>	
+					<div id="displayTwobtn5">
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a4addOne()"  
+						id = 'teama5-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt"
+						onclick="a4subOne()" 
+						id = 'teama5-sub-one1'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num absolute blacktxt"
+						onclick="b4addOne()" 
+						id = 'teamb5-add-one1'>+1</button>
+					<button class="tt-button-num absolute blacktxt" 
+						onclick="b4subOne()"
+						id = 'teamb5-sub-one1'>-1</button>
+					<button class="tt-button-num absolute blacktxt child"
+						id='displaysetFive1'>H/S 5</button>
+					</div>
+					</div>
+					</div>
+				</div>
+				<div class="child relative">
+					<h2 class="tt-scoring-txt whitetxt blueshadowtxt">Serving</h2>
+					<button class="bluebg
+							tt-teamb-serving"
+							id="teamb-serve-off">_</button>
+					<button class="redbg
+							tt-teama-serving"
+							id="teamb-serve-on">_</button>
+				</div>
+				<div id="displayThreediv">
+					<div class="displayTwo">
+					<button class="blacktxt absolute child"
+						id='displayOne1'>H/S Players</button>
+					<button class="blacktxt absolute child"
+						id='displayTwo1'>H/S Buttons</button>
+					<button class="blacktxt absolute child"
+						id='displayAll1'>Showll</button>
+					<button class="blacktxt absolute child"
+						id='displayHide1'>Hidell</button>
+					</div>
+					<table class="displaytwo-timer absolute" id="d2timer">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute" id="d2timerbtn">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+					
+				</div>
+			</div>
+		</div>
+				
+		<!-- TABLE TENNIS BUTTONS -->
+			<div class="child relative whitebd blackbg roundborder" id="displayTwodiv">
+				<div class="tt-button-box ">
+				<div>
+					<h3 class="tt-button-txt child whitetxt">Set</h3>
+					<h3 class="tt-button-txt child whitetxt">Team A</h3>
+					<h3 class="tt-button-txt child whitetxt">Team B</h3>
+					<h3 class="tt-button-txt child whitetxt">H/S</h3>
+				</div>
+				<div class="tt-top-minus1">
+					<h3 class="tt-button-txt child whitetxt">1</h3>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="aaddOne()"  
+						id = 'teama1-add-one'>+1</button>
+					<button class="tt-button-num blacktxt"
+						onclick="asubOne()" 
+						id = 'teama1-sub-one'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="baddOne()" 
+						id = 'teamb1-add-one'>+1</button>
+					<button class="tt-button-num  blacktxt" 
+						onclick="bsubOne()"
+						id = 'teamb1-sub-one'>-1</button>
+					<button class="tt-button-num blacktxt child"
+						id='displaysetOne'>H/S 1</button>
+					</div>
+				</div>
+				<div class="tt-top-minus1">
+					<h3 class="tt-button-txt child whitetxt">2</h3>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="a1addOne()"  
+						id = 'teama2-add-one'>+1</button>
+					<button class="tt-button-num blacktxt"
+						onclick="a1subOne()" 
+						id = 'teama2-sub-one'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="b1addOne()" 
+						id = 'teamb2-add-one'>+1</button>
+					<button class="tt-button-num  blacktxt" 
+						onclick="b1subOne()"
+						id = 'teamb2-sub-one'>-1</button>
+					<button class="tt-button-num blacktxt child"
+						id='displaysetTwo'>H/S 2</button>
+					</div>
+				</div>
+				<div class="tt-top-minus1">
+					<h3 class="tt-button-txt child whitetxt">3</h3>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="a2addOne()"  
+						id = 'teama3-add-one'>+1</button>
+					<button class="tt-button-num blacktxt"
+						onclick="a2subOne()" 
+						id = 'teama3-sub-one'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="b2addOne()" 
+						id = 'teamb3-add-one'>+1</button>
+					<button class="tt-button-num  blacktxt" 
+						onclick="b2subOne()"
+						id = 'teamb3-sub-one'>-1</button>
+					<button class="tt-button-num blacktxt child"
+						id='displaysetThree'>H/S 3</button>
+					</div>
+				</div>
+				<div class="tt-top-minus1">
+					<h3 class="tt-button-txt child whitetxt">4</h3>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="a3addOne()"  
+						id = 'teama4-add-one'>+1</button>
+					<button class="tt-button-num blacktxt"
+						onclick="a3subOne()" 
+						id = 'teama4-sub-one'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="b3addOne()" 
+						id = 'teamb4-add-one'>+1</button>
+					<button class="tt-button-num  blacktxt" 
+						onclick="b3subOne()"
+						id = 'teamb4-sub-one'>-1</button>
+					<button class="tt-button-num blacktxt child"
+						id='displaysetFour'>H/S 4</button>
+					</div>
+				</div>
+				<div class="tt-top-minus1">
+					<h3 class="tt-button-txt child whitetxt">5</h3>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="a4addOne()"  
+						id = 'teama5-add-one'>+1</button>
+					<button class="tt-button-num blacktxt"
+						onclick="a4subOne()" 
+						id = 'teama5-sub-one'>-1</button>
+					</div>
+					<div class="tt-button-txt child">
+					<button class="tt-button-num blacktxt"
+						onclick="b4addOne()" 
+						id = 'teamb5-add-one'>+1</button>
+					<button class="tt-button-num  blacktxt" 
+						onclick="b4subOne()"
+						id = 'teamb5-sub-one'>-1</button>
+					<button class="tt-button-num blacktxt child"
+						id='displaysetFive'>H/S 5</button>
+					</div>
+					<div>
+					<button class="blacktxt absolute child"
+						id='displayOne'>H/S Players</button>
+					<button class="blacktxt absolute child"
+						id='displayTwo'>H/S Buttons</button>
+					<button class="blacktxt absolute child"
+						id='displayAll'>Showll</button>
+					<button class="blacktxt absolute child"
+						id='displayHide'>Hidell</button>
+					</div>
+				</div>
+				</div>
+				<div class="whitebd roundborder tt-button-boxb">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<h3 class="bd-button-txt">Timer</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-start">Start</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-stop">Stop</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+				<div class="tt-button-save">
+					<div class="child">
+						<input type="text" 
+							placeholder="sport_sportname.excel"
+							class="whitetxt blackbg"
+							size="30"
+							maxlength="30">
+					</div>
+					<div class="child">
+						<button class="blacktxt">Save</button>
+					</div>
+				</div>
+				</div>
+			</div>
+
+	</div>
+	</div>
+<script src="../../jquery.js"></script>
+<script src = "tabletennistwo.js"></script>
+</body>
+
+</html>

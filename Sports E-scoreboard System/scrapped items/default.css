@@ -1,0 +1,372 @@
+body {
+	font-family: sans-serif;
+	background-color: black;
+}
+
+.container-menu{
+    line-height: 1.5;
+    position: relative;
+}
+#button-menu-icon {
+  	padding: .5em;
+    display: inline-flex;
+}
+.button-menu {
+  	background-color: cadetblue;
+  	text-decoration: none;
+  	display: inline-flex;
+
+  	position: absolute;
+  	left: 0;
+  	cursor: pointer;
+}
+.topmenu li {
+	display: inline-flex;
+	font-size:  1.5em;
+	text-align: right;
+}
+.topmenu.omega{
+	float:  right;
+}
+.topmenu.omega ul {
+	margin: 0;
+}
+li>a {
+	font-size: 10px;
+}
+
+.title-basketball {
+	color: darkred;
+	text-shadow: 2px 0 #fff, -2px 0 #fff,
+				 0 2px #fff, 0 -2px #fff,
+               	 1px 1px #fff, -1px -1px #fff,
+               	 1px -1px #fff, -1px 1px #fff;
+    	/* credit for text-shadow: https://bit.ly/3TKg2xa */
+    border: 5px solid darkred;
+    max-width: 300px;
+    width: 100%;
+	font-size: 33;
+	display: inline-flex;
+
+	/* display center */
+	align-content: center;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+}
+
+/* option for menu */
+
+.dropdown {
+	position: relative;
+	display: inline-flex;
+}
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 120px;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 7px 10px;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown-menu button {
+ 	color: black;
+  	padding: 7px 10px;
+  	text-decoration: none;
+  	display: block;
+  	font-family: sans-serif;
+}
+
+/* option for outdoor game */
+
+.dropdown-outdoor-option div {
+    list-style: none;
+}
+.dropdown-outdoor > button {
+    float: left;
+}
+.dropdown-outdoor button {
+    background-color: lightgray;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.dropdown-outdoor button:hover,
+.dropdown-outdoor button:focus {
+    outline: 0;
+    text-decoration: underline;
+}
+
+.dropdown-outdoor-option {
+    display: none;
+    position: absolute;
+   	color: white;
+   	font-size: 13;
+  	font-family: sans-serif;
+	background-color: black;
+	min-width: 140px;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 7px 10px;
+	z-index: 1;
+	margin: auto;
+}
+.dropdown-outdoor button:focus + .dropdown-outdoor-option,
+.dropdown-outdoor-option:hover {
+    display: block;
+}
+
+/* option for indoor game */
+
+.dropdown-indoor-option div {
+    list-style: none;
+}
+.dropdown-indoor > button {
+    float: left;
+}
+.dropdown-indoor button {
+    background-color: lightgray;
+    border: 2px solid black;
+	border-color: black;
+    cursor: pointer;
+}
+.dropdown-indoor button:hover,
+.dropdown-indoor button:focus {
+    outline: 0;
+    text-decoration: underline;
+}
+
+.dropdown-indoor-option {
+    display: none;
+    position: absolute;
+   	color: white;
+   	font-size: 13;
+  	font-family: sans-serif;
+	background-color: black;
+	min-width: 140px;
+	width: 100%;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 7px 10px;
+	z-index: 1;
+	margin: auto;
+}
+.dropdown-indoor button:focus + .dropdown-indoor-option,
+.dropdown-indoor-option:hover {
+    display: block;
+}
+
+
+/* Basketball CSS Script 
+	-players
+	-scoreboard
+	-buttons
+
+	player display
+*/
+
+.basketball-player-display{
+	padding-top: 60px;
+}
+.basketball-player-border {
+	font-size: 13px;
+	color: white;
+	font-family: sans-serif;
+	border: 5px solid darkred;
+	max-width: 400px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	justify-content: center;
+}
+.basketball-player-column {
+	column-count: 2;
+	margin: auto;
+}
+.basketball-player-gridleft {
+	border: 3px solid white;
+	padding-left: 0;
+	width: 100%;
+	margin: auto;
+}
+.basketball-player-gridleft p {
+	border: 1px solid white;
+	padding: 12px 10px;
+	margin: auto;
+}
+.basketball-player-gridright {
+	border: 3px solid white;
+	padding-left: 0;
+	width: 100%;
+	margin: auto;
+}
+.basketball-player-gridright p {
+	border: 1px solid white;
+	padding: 12px 10px;
+	margin: auto;
+}
+
+/* scoreboard display */
+
+.basketball-scoreboard-display {
+	padding-top: 10px;
+	padding-left: 450px;
+	padding-right: 450px;
+	display: inline-flex;
+	position: absolute;
+	left: 450px;
+	right: 450px;
+	top: 100px;
+	color: white;
+	padding: 1px 100px;
+	margin: auto;
+	border: 5px solid darkred;
+	justify-content: center;
+}
+/* home 00:00 period guest */
+.basketball-scoreboard-layout {
+	background-color: indianred;
+	font-family: sans-serif;
+	display: inline-flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 80px;
+	margin: auto;
+	justify-content: center;
+}
+.basketball-scoreboard-layout h4 {
+	background-color: lightpink;
+	color: black;
+	size: 22px;
+	display: inline-flex;
+	position: absolute;
+	left: 180px;
+	right: 180px;
+	top: 20px;
+	padding: 20px 10px;
+	margin: auto;
+	justify-content: center;
+}
+.basketball-scoreboard-layout h2, h3 {
+	color: black;
+	font-size: 35px;
+	text-shadow: 1px 0 #000000, -1px 0 #000000,
+				 0 1px #000000, 0 -1px #000000,
+               	 .5px .5px #000000, -.5px -.5px #000000,
+               	 .5px -.5px #000000, -.5px .5px #000000;
+	width: 100%;
+	padding: 100px 10px;
+	margin: auto;
+	justify-content: center;
+	position: relative;
+	left: -20;
+	top: -50;
+}
+.basketball-scoreboard-layout h3 {
+	font-size: 18;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.basketball-scoreboard-layout p {
+	column-count: 3;
+	margin: auto;
+}
+/* 000 000 000 */
+.basketball-scoreboard-score {
+	font: 35px sans-serif;
+	color: white;
+	column-count: 3;
+	margin: auto;
+	display: inline-flex;
+	position: absolute;
+	top: 130;
+	left: -128;
+}
+.basketball-scoreboard-score h2 {
+	background-color: black;
+	margin-left: 140px;
+	padding: 5px 5px;
+}
+.basketball-scoreboard-score h3 {
+	background-color: black;
+	margin-left: -30px;
+	padding: 5px;
+	color: white;
+	position: relative;
+	left: 85px;
+	top: 30px;
+	display: inline-flex;
+}
+/* fouls shotclock fouls */
+.basketball-scoreboard-bottom {
+	column-count: 3;
+	background-color: indianred;
+	border: 10px solid black;
+	padding: 5px 5px;
+	font: 20px sans-serif;
+	margin: auto;
+	position: absolute;
+	width: 410px;
+	left: 0px;
+	right: 0px;
+	top: 285px;
+	display: inline-flex;
+}
+.basketball-scoreboard-bottom h3 {
+	color: white;
+	text-shadow: .5px 0 #fff, -.5px 0 #fff,
+			 	 0 .5px #fff, 0 -.5px #fff,
+               	 .25px .25px #fff, -.25px -.25px #fff,
+             	 .25px -.25px #fff, -.25px .25px #fff;
+	margin-left: 68px;
+	top: -40;
+	left: -70;
+	padding: 60px;
+	font-size: 25px;
+}
+.basketball-scoreboard-bottom h4 {
+	margin-left: -18px;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	width: 430px;
+	position: absolute;
+	left: 170px;
+	top: -20;
+	display: inline-flex;
+	text-align: center;
+}
+/* 00 00 00 */
+.basketball-scoreboard-bottom-score {
+	font: 35px sans-serif;
+	column-count: 3;
+	margin: auto;
+	display: inline-flex;
+	position: absolute;
+	top: 400;
+	left: -25;
+}
+.basketball-scoreboard-bottom-score h3 {
+	background-color: black;
+	color: white;
+	margin-left: 78px;
+	padding: 5px 5px;
+}
+
+/* buttons display */
+
+.basketball-button-display {
+	background-color: black;
+	color: white;
+}

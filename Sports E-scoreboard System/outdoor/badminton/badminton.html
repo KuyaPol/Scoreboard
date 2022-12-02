@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Badminton e-scoreboard</title>
+	<link rel='stylesheet' href="badminton.css">
+	<link rel='stylesheet' href="../../index.css">
+</head>
+
+<body class="blackbg">
+
+		<!-- MENU OPTION -->
+
+	<header>
+		<nav class="relative">	
+			<div class="child leftnav">
+				<input type="checkbox" id="menu"/>
+				<label for="menu">
+					<img src="../../image/badmintonmenu.png" height="50px" width="50px">
+				</label>
+					<table class="menu">
+					<tr>
+						<td class="outmenu relative">
+							<input type="checkbox" id="outmenu" class="outdoor" />
+							<label for="pdmenu">
+								<span class="mainmenu">Outdoor</span>
+							</label>
+							<span class="outsubmenu bsln">
+								<a href="../../outdoor/baseball/baseball.html">Baseball / Softball</a>
+							</span>
+							<span class="outsubmenu bbln">
+								<a href="../../index.html">Basketball</a>
+							</span>
+							<span class="outsubmenu swln">
+								<a href="../../outdoor/swimming/swimming.html">Swimming</a>
+							</span>
+							<span class="outsubmenu scln">
+								<a href="../../outdoor/soccer/soccer.html">Soccer</a>
+							</span>
+							<span class="outsubmenu ttln">
+								<a href="../../outdoor/tabletennis/tabletennis.html">Table Tennis</a>
+							</span>
+							<span class="outsubmenu tln">
+								<a href="../../outdoor/tennis/tennis.html">Tennis</a>
+							</span>
+							<span class="outsubmenu vbln">
+								<a href="../../outdoor/volleyball/volleyball.html">Volleyball</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="inmenu relative">
+							<input type="checkbox" id="inmenu" class="indoor" />
+							<label for="inmenu">
+								<span class="mainmenu">Indoor</span>
+							</label>
+							<span class="insubmenu bwln">
+								<a href="../../indoor/bowling/bowling.html">Bowling</a>
+							</span>
+							<span class="insubmenu ckln">
+								<a href="../../indoor/checkers/checkers.html">Checkers</a>
+							</span>
+							<span class="insubmenu chln">
+								<a href="../../indoor/chess/chess.html">Chess</a>
+							</span>
+							<span class="insubmenu dln">
+								<a href="../../indoor/darts/darts.html">Darts</a>
+							</span>
+							<span class="insubmenu srln">
+								<a href="../../indoor/scrabble/scrabble.html">Scrabble</a>
+							</span>
+						</td>
+					</tr>
+					</table>
+				
+				
+			</div>
+			<div class="child rightnav">
+				<span>
+      				<a href="youtube link how to use / tutorial">About us</a>
+      			</span>
+				<span>
+					<a href="website to show members /out us">Tutorial</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+	<!-- TITLE OPTION -->
+
+	<div class="container-box">
+		<h1 class='title-badminton bluebd whiteshadowtxt'>Badminton</h1>
+		<button class='title-badminton bluebd whiteshadowtxt' 
+			id="button-title">Round Robin</button>
+
+	<div class="parent">
+		<div class='child' id="displayOnediv">
+				<div class="bd-player-display yellowbd blackbg whitetxt">
+					<input type="text"
+						class="blacktxt yellowshadowtxt" 
+						id='teamA' 
+						size="35" 
+						placeholder="Team A">
+
+					<div class='bd-player-grid clearfix'>
+						<div class='bd-teama-player'>
+
+							<input type="text" 
+								id='bd-teama-player1' 
+								placeholder="Team A Player 1">
+							<p class="bd-playersub-box yellowbd">
+							</p>
+						</div>
+						<div class='bd-teama-player'>
+
+							<input type="text" 
+								id='bd-teama-player4' 
+								placeholder="Team A Player 2">
+							<p class="bd-playersub-box yellowbd">
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bd-player-display bluebd blackbg whitetxt">
+					<input type="text"
+						class="whitetxt blueshadowtxt" 
+						id='teamB' 
+						size="35" 
+						placeholder="Team B">	
+
+					<div class='bd-player-grid clearfix' id='blueborder'>
+						<div class='bd-teamb-player'>
+
+							<input type="text" 
+								id='bd-teamb-player1' 
+								placeholder="Team B Player 1">
+							<p class="bd-playersub-box bluebd">
+							</p>
+						</div>
+						<div class='bd-teamb-player'>
+							
+							<input type="text" 
+								id='bd-teamb-player4' 
+								placeholder="Team B Player 2">
+							<p class="bd-playersub-box bluebd">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="child">
+				<div class="bd-scoring-box indianredbg">
+					<h1 class="ctfont bd-scoring-num lightgraybg whitetxt blackshadowtxt"
+						id="countdownTimer-box">00:00</h1>
+					<div>
+						<h2 class="bd-scoringa child whitebg blacktxt yellowshadowtxt">Team A</h2>
+						<h2 class="child blacktxt whiteshadowtxt">Period</h2>
+						<h2 class="bd-scoringb child whitebg whitetxt blueshadowtxt">Team B</h2>
+					</div>
+					<div>
+						<h1 class="ctfont bd-scoring-num bd-scoringa-num child blackbg blacktxt yellowshadowtxt"
+							id="teama-score">00</h1>
+						<h1 class="ctfont bd-period-num child blackbg blacktxt yellowshadowtxt"
+							id="period">0</h1>
+						<h1 class="ctfont bd-scoring-num bd-scoringb-num child blackbg whitetxt blueshadowtxt"
+							id="teamb-score">00</h1>
+					</div>
+					<div>
+						<h2 class="bd-scoringa-set child blacktxt yellowshadowtxt">Set</h2>
+						<h2 class="bd-scoring-txt child blacktxt whiteshadowtxt">Serving</h2>
+						<h2 class="bd-scoringb-set child whitetxt blueshadowtxt">Set</h2>
+					</div>
+					<div>
+						<h1 class="ctfont bd-scoringa-setnum bd-scoringa-num child blackbg blacktxt yellowshadowtxt"
+							id="teama-set">00</h1>
+						<div class="child">
+							<button class="bluebg
+									bd-teama-serving"
+									id="teama-serve-off">_</button>
+							<button class="redbg
+									bd-teama-serving"
+									id="teama-serve-on">_</button>
+						</div>
+						<div class="child">
+							<button class="bluebg
+									bd-teamb-serving"
+									id="teamb-serve-off">_</button>
+							<button class="redbg
+									bd-teamb-serving"
+									id="teamb-serve-on">_</button>
+
+						</div>
+							<h1 class="ctfont bd-scoringb-setnum bd-scoringb-num child blackbg whitetxt blueshadowtxt"
+								id="teamb-set">00</h1>
+					</div>
+				<div id="displayThreediv">
+					<button class="bd-button-num absolute blacktxt"
+						onclick="aaddOne()"  
+						id = 'teama1-add-one'>+1</button>
+					<button class="bd-button-num absolute blacktxt"
+						onclick="asubOne()" 
+						id = 'teama1-sub-one'>-1</button>
+
+					<button class="bd-button-num absolute blacktxt"
+						onclick="aaddSet()"
+						id = 'teama1-add-set'>+1</button>
+					<button class="bd-button-num absolute blacktxt"
+						onclick="asubSet()"
+						id = 'teama1-sub-set'>-1</button>
+
+					<button class="bd-button-num absolute blacktxt"
+						onclick="baddOne()" 
+						id = 'teamb1-add-one'>+1</button>
+					<button class="bd-button-num absolute blacktxt" 
+						onclick="bsubOne()"
+						id = 'teamb1-sub-one'>-1</button>
+
+					<button class="bd-button-num absolute blacktxt"
+						onclick="baddSet()"
+						id = 'teamb1-add-set'>+1</button>
+					<button class="vb-button-num absolute blacktxt"
+						onclick="bsubSet()" 
+						id = 'teamb1-sub-set'>-1</button>
+					<div class="displaytwo-period absolute">
+					<button class="bd-button-num child blacktxt"
+							onclick="paddOne()" 
+							id="period1-add">+1</button>
+					<button class="bd-button-num child blacktxt"
+							onclick="psubOne()" 
+							id="period1-sub">-1</button>
+					</div>
+					<button class="blacktxt absolute child"
+						id='displayOne'>H/S Players</button>
+					<button class="blacktxt absolute child"
+						id='displayTwo'>H/S Buttons</button>
+					<table class="displaytwo-timer absolute">
+						<tr>
+							<td>
+								<input type="number" 
+									class="countdown-timer-num" 
+									placeholder="00" 
+									id="timer1-minute"  
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+							<td>
+								<input type="number" 
+									class='countdown-timer-num' 
+									placeholder="00" 
+									id="timer1-second" 
+									max='60' 
+									min='0' 
+									value="0">
+							</td>
+						</tr>
+					</table>
+					<table class="displaytwo-timerbtn absolute">
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-start">Start</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-stop">Stop</button>
+						</td>
+					</tr>
+					<tr class="child">
+						<td>
+							<button class="blacktxt" id="timer1-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+				</div>
+
+			</div>
+		</div>
+
+			<!-- BADMINTON BUTTONS -->
+
+		<div class="child" id="displayTwodiv">
+			<div class="bd-button-box whitetxt blackbg yellowbd">
+				<h3>Score Point</h3>
+				<div class="child">
+					<h4 class='bd-button-scoretxt'>Scores</h4>
+				</div>
+				<div class="child">
+					<h4 class='bd-button-subtxt'>Sets</h4>
+				</div>
+			<div>
+				<div class="child">
+					<h3 class="bd-button-txt">Home</h3>
+				</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="bd-button-num blacktxt"
+						onclick="aaddOne()"  
+						id = 'teama-add-one'>+1</button>
+				</div>
+				<div class="child">
+					<button class="bd-button-num blacktxt"
+						onclick="asubOne()" 
+						id = 'teama-sub-one'>-1</button>
+				</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="bd-button-num blacktxt"
+						onclick="aaddSet()"
+						id = 'teama-add-set'>+1</button>
+				</div>
+				<div class="child">
+					<button class="bd-button-num blacktxt"
+						onclick="asubSet()"
+						id = 'teama-sub-set'>-1</button>
+				</div>
+			</div>
+
+				<div class="child">
+					<h3 class="bd-button-txt">Guest</h3>
+			</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="bd-button-num blacktxt"
+						onclick="baddOne()" 
+						id = 'teamb-add-one'>+1</button>
+				</div>
+				<div class="child">
+					<button class="bd-button-num blacktxt" 
+						onclick="bsubOne()"
+						id = 'teamb-sub-one'>-1</button>
+				</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="bd-button-num blacktxt"
+						onclick="baddSet()"
+						id = 'teamb-add-set'>+1</button>
+				</div>
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="bsubSet()" 
+						id = 'teamb-sub-set'>-1</button>
+				</div>
+				<div class="bd-button-period">
+					<h3 class="bd-button-txt child whitetxt">Period</h3>
+					<button class="bd-button-num child blacktxt"
+							onclick="paddOne()" 
+							id="period-add">+1</button>
+					<button class="bd-button-num child blacktxt"
+							onclick="psubOne()" 
+							id="period-sub">-1</button>
+				</div>
+				<div>
+					<h3 class='child'>Display:</h3>
+					<button class="blacktxt child"
+						id='displayOne'>H/S Players</button>
+					<button class="blacktxt child"
+						id='displayTwo'>H/S Buttons</button>
+				</div>
+			</div>
+			<!-- BADMINTON TIMER -->
+
+			<div class="bd-button-boxa blackbg whitetxt yellowbd">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<h3 class="bd-button-txt">Timer</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-start">Start</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-stop">Stop</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+				
+				<div class="bd-button-save">
+					<div class="child">
+						<input type="text" 
+							placeholder="sport_sportname.excel"
+							class="whitetxt blackbg"
+							size="30"
+							maxlength="30">
+					</div>
+					<div class="child">
+						<button class="blacktxt">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+
+<script src="../../jquery.js"></script>
+<script src = "badmintonroundrobin.js"></script>
+</body>
+</html>

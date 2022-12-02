@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Volleyball e-scoreboard</title>
+	<link rel='stylesheet' href="volleyball.css">
+	<link rel='stylesheet' href="../../index.css">
+</head>
+
+<body class="blackbg">
+
+		<!-- MENU OPTION -->
+
+	<header>
+		<nav class="relative">	
+			<div class="child leftnav">
+				<input type="checkbox" id="menu"/>
+				<label for="menu">
+					<img src="../../image/Volleyballmenu.png" height="50px" width="50px">
+				</label>
+					<table class="menu">
+					<tr>
+						<td class="outmenu relative">
+							<input type="checkbox" id="outmenu" class="outdoor" />
+							<label for="pdmenu">
+								<span class="mainmenu">Outdoor</span>
+							</label>
+							<span class="outsubmenu bdln">
+								<a href="../../outdoor/badminton/badminton.html">Badminton</a>
+							</span>
+							<span class="outsubmenu bsln">
+								<a href="../../outdoor/baseball/baseball.html">Baseball / Softball</a>
+							</span>
+							<span class="outsubmenu bbln">
+								<a href="../../index.html">Basketball</a>
+							</span>
+							<span class="outsubmenu swln">
+								<a href="../../outdoor/swimming/swimming.html">Swimming</a>
+							</span>
+							<span class="outsubmenu scln">
+								<a href="../../outdoor/soccer/soccer.html">Soccer</a>
+							</span>
+							<span class="outsubmenu ttln">
+								<a href="../../outdoor/tabletennis/tabletennis.html">Table Tennis</a>
+							</span>
+							<span class="outsubmenu tln">
+								<a href="../../outdoor/tennis/tennis.html">Tennis</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="inmenu relative">
+							<input type="checkbox" id="inmenu" class="indoor" />
+							<label for="inmenu">
+								<span class="mainmenu">Indoor</span>
+							</label>
+							<span class="insubmenu bwln">
+								<a href="../../indoor/bowling/bowling.html">Bowling</a>
+							</span>
+							<span class="insubmenu ckln">
+								<a href="../../indoor/checkers/checkers.html">Checkers</a>
+							</span>
+							<span class="insubmenu chln">
+								<a href="../../indoor/chess/chess.html">Chess</a>
+							</span>
+							<span class="insubmenu dln">
+								<a href="../../indoor/darts/darts.html">Darts</a>
+							</span>
+							<span class="insubmenu srln">
+								<a href="../../indoor/scrabble/scrabble.html">Scrabble</a>
+							</span>
+						</td>
+					</tr>
+					</table>
+				
+				
+			</div>
+			<div class="child rightnav">
+				<span>
+      				<a href="youtube link how to use / tutorial">About us</a>
+      			</span>
+				<span>
+					<a href="website to show members /out us">Tutorial</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+
+	<!-- TITLE OPTION -->
+
+	<div class="container-box">
+		<h1 class='title-volleyball bluebd whiteshadowtxt'>Volleyball</h1>
+		<button class='title-volleyball bluebd whiteshadowtxt' 
+			id="button-title">Round Robin</button>
+
+	<div class="parent">
+			<div class='child' id="displayOnediv">
+				<div class="vb-player-display yellowbd blackbg whitetxt">
+					<input type="text" 
+						class="blacktxt yellowshadowtxt" 
+						id='home-team' 
+						size="35" 
+						placeholder="STICA Volleyball Team">
+
+					<div class='vb-player-grid clearfix'>
+						<div class='vb-player'>
+
+							<input type="text" 
+								id='vb-player1' 
+								placeholder="Player 1">
+
+							<input type="text" 
+								id='vb-player2' 
+								placeholder="Player 2">
+
+							<input type="text" 
+								id='vb-player3' 
+								placeholder="Player 3">
+						</div>
+						<div class='vb-subplayer'>
+
+							<input type="text" 
+								id='vb-player4' 
+								placeholder="Player 4">
+
+							<input type="text" 
+								id='vb-player4' 
+								placeholder="Player 5">
+
+							<input type="text" 
+								id='vb-player6' 
+								placeholder="Player 6">
+
+						</div>
+					</div>
+				</div>
+
+				<div class="vb-player-display bluebd blackbg whitetxt">
+					<input type="text" 
+						class="whitetxt blueshadowtxt" 
+						id='guest-team' 
+						size="35" 
+						placeholder="Guest Team">	
+
+					<div class='vb-player-grid clearfix' id='blueborder'>
+						<div class='vb-guest-player'>
+
+							<input type="text" 
+								id='vb-guest-player1' 
+								placeholder="Guest Player 1">
+
+							<input type="text" 
+								id='vb-guest-player2' 
+								placeholder="Guest Player 2">
+
+							<input type="text" 
+								id='vb-guest-player3' 
+								placeholder="Guest Player 3">
+
+						</div>
+						<div class='vb-guest-subplayer'>
+							
+							<input type="text" 
+								id='vb-guest-player4' 
+								placeholder="Guest Player 4">
+							
+							<input type="text" 
+								id='vb-guest-player5' 
+								placeholder="Guest Player 5">
+							
+							<input type="text" 
+								id='vb-guest-player6' 
+								placeholder="Guest Player 6">
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class ='child'>
+			<div class="vb-scorebox blackbg whitebd">
+				<div>
+					<h2 class="vb-score-num 
+							ctfont 
+							child 
+							whitebd 
+							blacktxt 
+							whiteshadowtxt
+							blackbg"
+						id="countdownTimer-box">00:00</h2>
+				</div>
+				<div class="child">
+					<h1 class="vb-score-txt 
+							whitebd 
+							blacktxt 
+							yellowshadowtxt">Home</h1>
+					<h1 class="ctfont vb-score-num 
+							whitebd blacktxt 
+							yellowshadowtxt"
+						id="home-score">00</h1>
+				</div>
+				<div class="child whitebd cadetbluebg">
+					<h2 class="vb-score-txt 
+							blacktxt 
+							whiteshadowtxt">Fouls</h2>
+					<h1 class="ctfont vb-score-num 
+							child whitebd 
+							blacktxt 
+							yellowshadowtxt"
+						id="home-foul">00</h1>
+					<h1 class="ctfont vb-score-num 
+							child 
+							whitebd 
+							whitetxt 
+							blueshadowtxt"
+						id="guest-foul">00</h1>
+				</div>
+				<div class="child">
+					<h1 class="vb-score-txt 
+							whitebd 
+							whitetxt 
+							blueshadowtxt">Guest</h1>
+					<h1 class="vb-score-num 
+							whitebd 
+							whitetxt 
+							blueshadowtxt"
+						id="guest-score">00</h1>
+				</div>
+				<div>
+					<div class="child">
+						<button class="bluebg
+								vb-home-serving"
+								id="home-serve-off">_</button>
+						<button class="redbg
+								vb-home-serving"
+								id="home-serve-on">_</button>
+						<h2 class="vb-score-txt 
+								blacktxt 
+								yellowshadowtxt">Serving</h2>
+					</div>
+					<div class="child">
+						<h2 class="vb-period-txt
+								blacktxt 
+								whiteshadowtxt">Period</h2>
+						<h1 class="ctfont
+								blacktxt 
+								whiteshadowtxt
+								whitebd"
+							id="period">00</h1>
+					</div>
+					<div class="child">
+						<button class="bluebg
+								vb-home-serving"
+								id="guest-serve-off">_</button>
+						<button class="redbg
+								vb-home-serving"
+								id="guest-serve-on">_</button>
+						<h2 class="vb-score-txt 
+								blacktxt 
+								yellowshadowtxt">Serving</h2>
+					</div>
+				</div>
+
+				<!-- DISPLAY TWO -->
+				<div id="displayThreediv">
+					<div>
+						<table class="displaytwo-timer blackbg">
+							<tr class="child">
+								<td>
+									<input type="number" 
+										class="countdown-timer-num" 
+										placeholder="00" 
+										id="timer1-minute"  
+										max='60' 
+										min='0' 
+										value="0">
+								</td>
+							</tr>
+							<tr class="child">
+								<td>
+									<input type="number" 
+										class='countdown-timer-num' 
+										placeholder="00" 
+										id="timer1-second" 
+										max='60' 
+										min='0' 
+										value="0">
+								</td>
+							</tr>
+						</table>
+						<table class="displaytwo-timer-buttons">
+							<tr class="child">
+								<td>
+									<button class="blacktxt" id="timer1-start">Start</button>
+								</td>
+							</tr>
+							<tr class="child">
+								<td>
+									<button class="blacktxt" id="timer1-stop">Stop</button>
+								</td>
+							</tr>
+							<tr class="child">
+								<td>
+									<button class="blacktxt" id="timer1-reset">Reset</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="child">
+						<button class="vb-button-num blacktxt"
+							onclick="haddOne()" 
+							id = 'home1-add-one'>+1</button>
+					</div>
+					<div class="child">
+						<button class="vb-button-num blacktxt" 
+							onclick="hsubOne()"
+							id = 'home1-sub-one'>-1</button>
+					</div>
+
+					<div class="child">
+						<button class="vb-button-num blacktxt"
+							onclick="haddFoul()"
+							id = 'home1-add-foul'>+1</button>
+						</div>
+					<div class="child">
+						<button class="vb-button-num blacktxt"
+							onclick="hsubFoul()"
+							id = 'home1-sub-foul'>-1</button>
+					</div>
+
+					<div class="child">
+						<button class="vb-button-num blacktxt"
+							onclick="gaddFoul()"
+							id = 'guest1-add-foul'>+1</button>
+					</div>
+					<div class="child">
+						<button class="vb-button-num blacktxt"
+							onclick="gsubFoul()"
+							id = 'guest1-sub-foul'>-1</button>
+					</div>
+
+					<div class="child">
+						<button class="vb-button-num blacktxt" 
+							onclick="gaddOne()"
+							id = 'guest1-add-one'>+1</button>
+					</div>
+					<div class="child">
+						<button class="vb-button-num blacktxt" 
+							onclick="gsubOne()"
+							id = 'guest1-sub-one'>-1</button>
+					</div>
+					<div class='displaytwo-period'>
+						<button class="vb-button-num child blacktxt"
+							onclick="paddOne()"
+							id="period1-add">+1</button>
+						<button class="vb-button-num child blacktxt"
+							onclick="psubOne()"
+							id="period1-sub">-1</button>
+					</div>
+					<div class="displaytwo-display">
+						<button class="blacktxt child"
+							id='displayOne1'>H/S Players</button>
+						<button class="blacktxt child"
+							id='displayTwo1'>H/S Buttons</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- VOLLEYBALL BUTTONS -->
+
+		<div class="child" id="displayTwodiv">
+			<div class="vb-button-box blackbg whitetxt yellowbd">
+				<div class="child">
+					<h4 class='vb-button-scoretxt'>Scores</h4>
+				</div>
+				<div class="child">
+					<h4 class='vb-button-subtxt'>Fouls</h4>
+				</div>
+			<div>
+				<div class="child">
+					<h3 class="vb-button-txt">Home</h3>
+				</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="haddOne()"  
+						id = 'home-add-one'>+1</button>
+				</div>
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="hsubOne()" 
+						id = 'home-sub-one'>-1</button>
+				</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="haddFoul()"
+						id = 'home-add-foul'>+1</button>
+				</div>
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="hsubFoul()"
+						id = 'home-sub-foul'>-1</button>
+				</div>
+			</div>
+
+				<div class="child">
+					<h3 class="vb-button-txt">Guest</h3>
+			</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="gaddOne()" 
+						id = 'guest-add-one'>+1</button>
+				</div>
+				<div class="child">
+					<button class="vb-button-num blacktxt" 
+						onclick="gsubOne()"
+						id = 'guest-sub-one'>-1</button>
+				</div>
+
+				<p class="child"> | </p>
+
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="gaddFoul()"
+						id = 'guest-add-foul'>+1</button>
+				</div>
+				<div class="child">
+					<button class="vb-button-num blacktxt"
+						onclick="gsubFoul()" 
+						id = 'guest-sub-foul'>-1</button>
+				</div>
+				<div>
+					<h3 class='child'>Display:</h3>
+					<button class="blacktxt child"
+						id='displayOne'>H/S Players</button>
+					<button class="blacktxt child"
+						id='displayTwo'>H/S Buttons</button>
+				</div>
+			</div>
+			
+		<!-- VOLLEYBALL TIMER -->
+
+			<div class="vb-button-box blackbg whitetxt yellowbd">
+				<table class="countdown-timer-box child">
+					<tr>
+						<td>
+							<h3 class="vb-button-txt">Timer</h3>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="number" 
+								class="countdown-timer-num" 
+								placeholder="00" 
+								id="timer-minute"  
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+						<td>
+							<input type="number" 
+								class='countdown-timer-num' 
+								placeholder="00" 
+								id="timer-second" 
+								max='60' 
+								min='0' 
+								value="0">
+						</td>
+					</tr>
+					<tr class="timer-txt">
+						<td>minutes</td>
+						<td>seconds</td>
+					</tr>		
+				</table>
+				<table class="child">
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-start">Start</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-stop">Stop</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button class="blacktxt" id="timer-reset">Reset</button>
+						</td>
+					</tr>
+				</table>
+
+				<!-- VOLLEYBALL PERIOD -->
+				<div class="vb-button-period">
+					<h3 class="vb-button-txt child whitetxt">Period</h3>
+					<button class="vb-button-num child blacktxt"
+							onclick="paddOne()" 
+							id="period-add">+1</button>
+					<button class="vb-button-num child blacktxt"
+							onclick="psubOne()" 
+							id="period-sub">-1</button>
+				</div>
+				<div class="vb-button-save">
+					<div class="child">
+						<input type="text" 
+							placeholder="sport_sportname.excel"
+							class="whitetxt blackbg"
+							size="30"
+							maxlength="30">
+					</div>
+					<div class="child">
+						<button class="blacktxt">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>	
+</div>
+<script src="../../jquery.js"></script>
+<script src = "volleyballroundrobin.js"></script>
+</body>
+
+</html>

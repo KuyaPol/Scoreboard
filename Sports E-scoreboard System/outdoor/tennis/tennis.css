@@ -1,0 +1,408 @@
+.bdln {
+	top: 5px;
+	left: 100px;
+	width: 130px;
+}
+.bbln {
+	top: 100px;
+	left: 100px;
+	width: 130px;
+}
+.bsln {
+	top: 50px;
+	left: 100px;
+	width: 130px;
+}
+.scln {
+	top: 150px;
+	left: 100px;
+	width: 130px;
+}
+.ttln {
+	top: 250px;
+	left: 100px;
+	width: 130px;
+}
+.swln {
+	top: 200px;
+	left: 100px;
+	width: 130px;
+}
+.vbln {
+	top: 300px;
+	left: 100px;
+	width: 130px;
+}
+
+.bwln {
+	top: 5px;
+	left: 100px;
+	width: 130px;
+}
+.ckln {
+	top: 50px;
+	left: 100px;
+	width: 130px;
+}
+.chln {
+	top: 100px;
+	left: 100px;
+	width: 130px;
+}
+.dln {
+	top: 150px;
+	left: 100px;
+	width: 130px;
+}
+.srln {
+	top: 200px;
+	left: 100px;
+	width: 130px;
+}
+/* TENNIS TITLE  */
+.title-tennis {
+	color: black;
+	text-shadow: 2px 0 #fff, -2px 0 #fff,
+				 0 2px #fff, 0 -2px #fff,
+               	 1px 1px #fff, -1px -1px #fff,
+               	 1px -1px #fff, -1px 1px #fff;
+    background-color: darkblue;
+    border: 5px solid blue;
+    max-width: 300px;
+    width: 100%;
+	font-size: 33;
+	display: inline-flex;
+
+	/* display center */
+	align-content: center;
+	justify-content: center;
+	position: relative;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+}
+#button-title {
+	font-size: 22px;
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+	right: 0;
+	left: 100;
+	padding: auto;
+	width: 120px;
+}
+
+/* TENNIS PLAYER */
+.t-player-display{
+	max-width: auto;
+	margin: 10px;
+	padding: auto;
+}
+#teamA, #teamB {
+	font-size: 18px;
+	border: unset;
+	width: 200px;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#t-teamb-player1, #t-teamb-player2,
+#t-teamb-player3, #t-teamb-player4,
+#t-teamb-player5, #t-teamb-player6 {
+	border: 1px solid blue;
+}
+input[type='text'] {
+	border: 1px solid yellow;
+	column-count: 2;
+	display: flex;
+	align-items: center;
+	width: 200px;
+	margin: 0px 5px 0px 5px;
+	padding: 10px 10px;
+	text-align: center;
+}
+div.t-teama-player-grid.clearfix div.t-teama-player input,
+div.t-teama-player-grid.clearfix div.t-teamb-player input {
+	background-color: black;
+	color: white;
+}
+div.t-player-grid.clearfix div.t-teamb-player input,
+div.t-player-grid.clearfix div.t-teama-player input {
+	background-color: black;
+	color: white;
+}
+
+.t-player-grid {
+	border: 3px solid yellow;
+	column-count: 2;
+	display: flex;
+	align-items: center;
+}
+
+div.t-player-display.bluebd.blackbg.whitetxt {
+	font-size: 12px;
+}
+.t-playersub-box {
+	height: 20px;
+}
+#countdownTimer-box {
+	max-width: 160px;
+}
+
+/* TENNIS SCORING */\
+.t-scoring-box {
+	max-width: 250px;
+	max-height: 100px;
+}
+.t-scoring-txtset {
+	padding: 5px;
+	top: -45px;
+	right: 115px;
+	border: 5px solid red;
+	background-color: indianred;
+}
+.t-scoring-txt {
+	margin-right: 190px;
+	margin-bottom: 15px;
+}
+.t-scoring-txt1 {
+	position: absolute;
+	left: 205px;
+	top: 10px;
+}
+.t-scoring-txt2 {
+	position: absolute;
+	left: 260px;
+	top: 10px;
+}
+.t-scoring-txt3 {
+	position: absolute;
+	left: 315px;
+	top: 10px;
+}.t-scoring-txt4 {
+	position: absolute;
+	left: 370px;
+	top: 10px;
+}
+.t-scoring-txt5 {
+	position: absolute;
+	left: 425px;
+	top: 10px;
+}
+
+.t-scoring-num {
+	padding: 10px;
+	width: 30px;
+	margin: 5px 25px 5px 25px;
+}
+.t-scoring-numset {
+	padding: 10px;
+	margin-right: 15px;
+}
+.t-scoring-txtserve {
+	margin: 5px;
+}
+.t-teama-serving {
+	width: 30px;
+	height: 30px;
+	margin: 10px 25px 10px 5px;
+	margin-top: 5px;
+}
+.t-teamb-serving {
+	width: 30px;
+	height: 30px;
+	margin: 10px 5px 10px 25px;
+	margin-top: 5px;
+}
+#teama-serve-on {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 330px;
+	left: 178px;
+	display: none;
+}
+#teamb-serve-on {
+	width: 20px;
+	height: 20px;
+	display: ;
+	position: absolute;
+	top: 330px;
+	left: 243px;
+	display: none;
+}
+/* TENNIS BUTTONS */
+.t-button-settxt {
+	margin-left: -350px;
+}
+.t-button-num1 {
+	position: absolute;
+	left: 110px;
+}
+.t-button-num2 {
+	position: absolute;
+	left: 185px;
+}
+.t-button-num3 {
+	position: absolute;
+	left: 260px;
+}
+.t-button-num4 {
+	position: absolute;
+	left: 340px;
+}
+.t-button-num5 {
+	position: absolute;
+	left: 415px;
+}
+.t-button-setreset {
+	margin: 10px;
+}
+
+/* Display 2 */
+.d2-0 {
+	top: 85px;
+	left: 90px;
+}
+.d2-15 {
+	top: 105px;
+	left: 90px;
+	width: 32px;
+}
+.d2-30 {
+	top: 130px;
+	left: 115px;
+	width: 32px;
+}
+.d2-40 {
+	top: 130px;
+	left: 145px;
+	width: 32px;
+}
+.d2-A {
+	top: 65px;
+	left: 125px;
+	width: 32px;
+}
+
+.d2-0b {
+	top: 180px;
+	left: 90px
+}
+.d2-15b {
+	top: 200px;
+	left: 90px;
+	width: 32px;
+}
+.d2-30b {
+	top: 225px;
+	left: 115px;
+	width: 32px;
+}
+.d2-40b {
+	top: 225px;
+	left: 145px;
+	width: 32px;
+}
+.d2-Ab {
+	top: 160px;
+	left: 125px;
+	width: 32px;
+}
+
+.d2-s1a {
+	top: 65px;
+	left: 200px;
+}
+.d2-s1as {
+	top: 130px;
+	left: 200px;
+}
+.d2-s2a {
+	top: 65px;
+	left: 255px;
+}
+.d2-s2as {
+	top: 130px;
+	left: 255px;
+}
+.d2-s3a {
+	top: 65px;
+	left: 310px;
+}
+.d2-s3as {
+	top: 130px;
+	left: 310px;
+}
+.d2-s4a {
+	top: 65px;
+	left: 365px;
+}
+.d2-s4as {
+	top: 130px;
+	left: 365px;
+}
+.d2-s5a {
+	top: 65px;
+	left: 420px;
+}
+.d2-s5as {
+	top: 130px;
+	left: 420px;
+}
+
+.d2-s1b {
+	top: 160px;
+	left: 200px;
+}
+.d2-s1bs {
+	top: 225px;
+	left: 200px;
+}
+.d2-s2b {
+	top: 160px;
+	left: 255px;
+}
+.d2-s2bs {
+	top: 225px;
+	left: 255px;
+}
+.d2-s3b {
+	top: 160px;
+	left: 310px;
+}
+.d2-s3bs {
+	top: 225px;
+	left: 310px;
+}
+.d2-s4b {
+	top: 160px;
+	left:  365px;
+}
+.d2-s4bs {
+	top: 225px;
+	left: 365px;
+}
+.d2-s5b {
+	top: 160px;
+	left: 420px;
+}
+.d2-s5bs {
+	top: 225px;
+	left: 420px;
+}
+
+.d2-ra {
+	top: 95px;
+	left: 450px;
+}
+.d2-rb {
+	top: 190px;
+	left: 450px;
+}
+#displayThreediv {
+	display: none;
+}

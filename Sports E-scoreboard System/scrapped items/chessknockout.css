@@ -1,0 +1,443 @@
+/* CHESS TITLE  */
+body {
+	background-image: url('../../image/chessbg.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.title-chess {
+	color: black;
+	text-shadow: 2px 0 #fff, -2px 0 #fff,
+				 0 2px #fff, 0 -2px #fff,
+               	 1px 1px #fff, -1px -1px #fff,
+               	 1px -1px #fff, -1px 1px #fff;
+	background-color: darkblue;
+    border: 5px solid blue;
+    max-width: 300px;
+    width: 100%;
+	font-size: 33;
+	display: inline-flex;
+
+	/* display center */
+	align-content: center;
+	justify-content: center;
+	position: relative;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+}
+#button-title {
+	font-size: 22px;
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+	right: 0;
+	left: 100;
+	padding: auto;
+	width: 120px;
+}
+
+/* CHESS PLAYER */
+.ch-player-display{
+	max-width: auto;
+	margin: 10px;
+	padding: auto;
+	border-radius: 21px;
+}
+
+
+input[type='text'] {
+	border: 3px solid yellow;
+	border-radius: 21px;
+	column-count: 2;
+	display: flex;
+	align-items: center;
+	border: 2px solid yellow;
+	width: 250px;
+	margin: 8px 5px 8px 5px;
+	padding: 10px 10px;
+	text-align: center;
+}
+div.ch-player-grid.clearfix div.ch-player input {
+	background-color: black;
+	color: white;
+}
+div.ch-player-grid.clearfix 
+div.ch-subplayer.bluebd.indianredtxt input {
+	background-color: black;
+	width: 50px;
+	color: lightgray;
+}
+.ch-player-txt {
+	color: white;
+	margin: 10px 5px 10px 5px;
+}
+div.ch-player-grid.clearfix 
+div.ch-subplayer.bluebd input {
+	background-color: black;
+	width: 25px;
+	color: indianred;
+}
+
+.ch-player-grid {
+	border: 5px solid yellow;
+	column-count: 2;
+	display: flex;
+	align-items: center;
+	border-radius: 21px;
+}
+
+/* CHESS SCORING */
+.ch-score-box {
+	max-width: 500px;
+	margin: 10px;
+	padding: 20px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ch-score-txt {
+	padding: 5px;
+	max-height: 100px;
+	font-size: 35px;
+	position: relative;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+#ch-game-display {
+	border: 5px solid cadetblue;
+	border-radius: 21px;
+	position: relative;
+	float: left;
+}
+#ch-under-elo {
+	border: 5px solid cadetblue;
+	border-radius: 21px;
+	float: right;
+}
+#ch-playerx1-score, #ch-playerx2-score, #ch-playerx3-score,
+#ch-playerx4-score, #ch-playerx5-score, #ch-playerx6-score,
+#ch-playerx7-score, #ch-playerx8-score,
+#ch-playery1-score, #ch-playery2-score, #ch-playery3-score,
+#ch-playery4-score, #ch-playery5-score, #ch-playery6-score,
+#ch-playery7-score, #ch-playery8-score {
+	padding: 15px 40px 15px 40px;
+}
+.ch-player-margin {
+	margin: 20px 40px 5px 40px;
+}
+.ch-playerx-margin, .ch-playery-margin {
+	margin: 10px 0px 0px 0px;
+}
+
+#ch-playerx1-name, #ch-playerx2-name, #ch-playerx3-name,
+#ch-playerx4-name, #ch-playerx5-name, #ch-playerx6-name,
+#ch-playerx7-name, #ch-playerx8-name,
+#ch-playery1-name, #ch-playery2-name, #ch-playery3-name,
+#ch-playery4-name, #ch-playery5-name, #ch-playery6-name,
+#ch-playery7-name, #ch-playery8-name {
+	font-size: 20px;
+	width: 120px;
+	height: 50px;
+	max-height: 100px;
+	margin: -3px 5px 10px 5px;
+	padding: 10px 20px 5px 5px;
+}
+#ch-playerx1-elo, #ch-playerx2-elo, #ch-playerx3-elo,
+#ch-playerx4-elo, #ch-playerx5-elo, #ch-playerx6-elo,
+#ch-playerx7-elo, #ch-playerx8-elo {
+	font-size: 20px;
+	max-width: 120px;
+	max-height: 20px;
+	margin: 30px 5px 10px 90px;
+	padding: auto;
+}
+#ch-playery1-elo, #ch-playery2-elo, #ch-playery3-elo,
+#ch-playery4-elo, #ch-playery5-elo, #ch-playery6-elo,
+#ch-playery7-elo, #ch-playery8-elo {
+	font-size: 20px;
+	max-width: 120px;
+	max-height: 20px;
+	margin: 30px 90px 10px 5px;
+	padding: auto;
+}
+
+.ch-image {
+	position: relative;
+	left: -15px;
+	top: -2px;
+}
+.ch-player-vs {
+	position: absolute;
+	font-size: 25px;
+	bottom: -120px;
+	left: 30px;
+	margin: 180px;
+	padding: -1em;
+	width: 30px;
+	height: 30px;
+}
+.ch-playerx-elo {
+	position: absolute;
+	bottom: 45px;
+	left: 0px;
+	padding: 5px;
+}
+.ch-playery-elo {
+	position: absolute;
+	bottom: 45px;
+	right: 0px;
+	padding: 5px;
+}
+.ch-sport-name {
+	position: relative;
+	bottom: -55px;
+	left: 60px;
+	font-size: 25px;
+}
+
+/* CHESS BUTTONS */
+.ch-button-margin {
+	margin: auto;
+}
+.ch-button-spacing {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+	margin-top: auto;
+}
+div.child.whitetxt.bluebd div.bluebd input {
+	width: 150px;
+}
+
+/* OPTION SCORE */
+.ch-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1px 0;
+	max-width: 220px;
+	margin: 0 auto;
+}
+.ch-score-dropdown,
+.ch-score-content {
+	width: 100%;
+	width: 400px;
+}
+select {
+	width: 50%;
+	padding: 5px;
+	font-weight: 700;
+	border: none;
+	border: 2px solid #3f51b5;
+	background-color: #e8eaf6;
+	background-position: 95% 55%;
+	background-size: 22px;
+}
+.ch-score-content {
+	margin: 4px 0;
+}
+.ch-score-content .ch-data {
+	padding: auto;
+	background-color: #000;
+	border: 2px solid #8bc34a;
+	border-radius: 8px;
+}
+.chData, .chtwoData, .chtwoData2, .chDisplay, .chVs, .chVstwo,
+#chplayerVsone1, #chplayerVstwo1{
+	display: none;
+}
+
+.choneEliminate, .chtwoEliminate, .chthreeEliminate, 
+.chfourEliminate, .chfiveEliminate, .chsixEliminate,
+.chsevenEliminate, .cheightEliminate {
+	diplay: none;
+	background-color: rgba(255, 0, 0, .75);
+	width: 282px;
+	height: 10px;
+	position: absolute;
+	top: 232px;
+}
+.ch1-redmark, .ch2-redmark, .ch3-redmark,
+.ch4-redmark, .ch5-redmark, .ch6-redmark,
+.ch7-redmark, .ch8-redmark {
+	background-color: rgba(255, 0, 0, .75);
+	width: 282px;
+	height: 10px;
+	position: absolute;
+	top: 232px;
+	display: none;
+}
+
+.ch-eliminate {
+	margin-top: 3px;
+	padding: 1px;
+}
+#ch2-eliminate {
+	margin-top: 60px;
+}
+#ch3-eliminate {
+	margin-top: 105px;
+}
+#ch4-eliminate {
+	margin-top: 150px;
+}
+#ch5-eliminate {
+	margin-top: 195px;
+} 
+#ch6-eliminate {
+	margin-top: 245px;
+}
+#ch7-eliminate {
+	margin-top: 290px;
+}
+#ch8-eliminate {
+	margin-top: 335px;
+} 
+
+.ch-vs-player {
+	margin: 5px -35px 5px -35px;
+}
+.ch-display2one {
+	position: absolute;
+	display: inline-block;
+	margin-bottom: 0px;
+	top: 285px;
+	left: 25px;
+	width: 40px;
+}
+.ch-display2two {
+	position: absolute;
+	display: inline-block;
+	margin-bottom: 0px;
+	top: 285px;
+	left: 400px;
+	width: 40px;
+}
+.ch-display2one-button {
+	position: absolute;
+	bottom: 230px;
+	left: 10px;
+	width: 40px;
+	height: 20px;
+}
+.ch-display2one2-button {
+	position: absolute;
+	bottom: 200px;
+	left: 10px;
+	width: 40px;
+	height: 20px;
+}
+.ch-display2one-buttontwo {
+	position: absolute;
+	bottom: 230px;
+	left: 190px;
+	width: 40px;
+	height: 20px;
+}
+.ch-display2one2-buttontwo {
+	position: absolute;
+	bottom: 200px;
+	left: 190px;
+	width: 40px;
+	height: 20px;
+}
+
+.ch-display2two-button {
+	position: absolute;
+	bottom: 230px;
+	right: 190px;
+	width: 40px;
+	height: 20px;
+}
+.ch-display2two2-button {
+	position: absolute;
+	bottom: 200px;
+	right: 190px;
+	width: 40px;
+	height: 20px;
+}
+.ch-display2two-buttontwo {
+	position: absolute;
+	bottom: 230px;
+	right: 20px;
+	width: 40px;
+	height: 20px;
+}
+.ch-display2two2-buttontwo {
+	position: absolute;
+	bottom: 200px;
+	right: 20px;
+	width: 40px;
+	height: 20px;
+}
+.ch-display2one-eli {
+	position: absolute;
+	bottom: 32px;
+	left: 22px;
+	width: 100px;
+	height: 21px;
+}
+.ch-display2one-res {
+	position: absolute;
+	bottom: 30px;
+	left: 130px;
+	width: 90px;
+	height: 21px;
+}
+.ch-display2two-eli {
+	position: absolute;
+	bottom: 32px;
+	right: 120px;
+	width: 100px;
+	height: 21px;
+}
+.ch-display2two-res {
+	position: absolute;
+	bottom: 30px;
+	right: 22px;
+	width: 90px;
+	height: 21px;
+}
+.ch-display2-settingsone {
+	position: absolute;
+	top: 10px;
+	left: 73px;
+}
+.ch-display2-settingstwo {
+	position: absolute;
+	top: 10px;
+	right: 81px;
+}
+
+.ch-button-editgd {
+	position: absolute;
+	top: 10px;
+	left: 70px;
+}
+.ch-button-elo {
+	position: absolute;
+	top: 10px;
+	right: 80px;
+}
+.display-one {
+	position: absolute;
+	top: 10px;
+	left: 190px;
+	right: 190px;
+}
+.display-two {
+	position: absolute;
+	top: 40px;
+	left: 190px;
+	right: 190px;
+}
+.display-three {
+	position: absolute;
+	top: 70px;
+	left: 190px;
+	right: 190px;
+}

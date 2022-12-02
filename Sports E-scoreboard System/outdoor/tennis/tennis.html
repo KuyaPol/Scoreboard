@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tennis e-scoreboard</title>
+	<link rel='stylesheet' href="tennis.css">
+	<link rel='stylesheet' href="../../index.css">
+</head>
+
+<body class="blackbg">
+
+		<!-- MENU OPTION -->
+
+	<header>
+		<nav class="relative">	
+			<div class="child leftnav">
+				<input type="checkbox" id="menu"/>
+				<label for="menu">
+					<img src="../../image/tennismenu.png" height="50px" width="50px">
+				</label>
+					<table class="menu">
+					<tr>
+						<td class="outmenu relative">
+							<input type="checkbox" id="outmenu" class="outdoor" />
+							<label for="pdmenu">
+								<span class="mainmenu">Outdoor</span>
+							</label>
+							<span class="outsubmenu bdln">
+								<a href="../../outdoor/badminton/badminton.html">Badminton</a>
+							</span>
+							<span class="outsubmenu bsln">
+								<a href="../../outdoor/baseball/baseball.html">Baseball / Softball</a>
+							</span>
+							<span class="outsubmenu bbln">
+								<a href="../../index.html">Basketball</a>
+							</span>
+							<span class="outsubmenu swln">
+								<a href="../../outdoor/swimming/swimming.html">Swimming</a>
+							</span>
+							<span class="outsubmenu scln">
+								<a href="../../outdoor/soccer/soccer.html">Soccer</a>
+							</span>
+							<span class="outsubmenu ttln">
+								<a href="../../outdoor/tabletennis/tabletennis.html">Table Tennis</a>
+							</span>
+							<span class="outsubmenu vbln">
+								<a href="../../outdoor/volleyball/volleyball.html">Volleyball</a>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="inmenu relative">
+							<input type="checkbox" id="inmenu" class="indoor" />
+							<label for="inmenu">
+								<span class="mainmenu">Indoor</span>
+							</label>
+							<span class="insubmenu bwln">
+								<a href="../../indoor/bowling/bowling.html">Bowling</a>
+							</span>
+							<span class="insubmenu ckln">
+								<a href="../../indoor/checkers/checkers.html">Checkers</a>
+							</span>
+							<span class="insubmenu chln">
+								<a href="../../indoor/chess/chess.html">Chess</a>
+							</span>
+							<span class="insubmenu dln">
+								<a href="../../indoor/darts/darts.html">Darts</a>
+							</span>
+							<span class="insubmenu srln">
+								<a href="../../indoor/scrabble/scrabble.html">Scrabble</a>
+							</span>
+						</td>
+					</tr>
+					</table>
+				
+				
+			</div>
+			<div class="child rightnav">
+				<span>
+      				<a href="youtube link how to use / tutorial">About us</a>
+      			</span>
+				<span>
+					<a href="website to show members /out us">Tutorial</a>
+				</span>
+			</div>
+		</nav>
+	</header>
+
+	<!-- TITLE OPTION -->
+
+	<div class="container-box">
+		<h1 class='title-tennis bluebd whiteshadowtxt'>Tennis</h1>
+		<button class='title-tennis bluebd whiteshadowtxt' 
+			id="button-title">Double</button>
+
+	<div class="parent">
+		<div class='child' id="displayOnediv">
+				<div class="t-player-display yellowbd blackbg whitetxt">
+					<input type="text" 
+						class="blacktxt yellowshadowtxt" 
+						id='teamA' 
+						size="35" 
+						placeholder="Team A">
+
+					<div class='t-player-grid clearfix'>
+						<div class='t-teama-player'>
+
+							<input type="text" 
+								id='t-teama-player1' 
+								placeholder="Team A Player 1">
+							</p>
+							<input type="text" 
+								id='t-teama-player4' 
+								placeholder="Team A Player 2">
+							</p>
+						</div>
+					
+					</div>
+				</div>
+
+				<div class="t-player-display bluebd blackbg whitetxt">
+					<input type="text"
+						class="whitetxt blueshadowtxt" 
+						id='teamB' 
+						size="35" 
+						placeholder="Team B">	
+
+					<div class='t-player-grid clearfix' id='blueborder'>
+						<div class='t-teamb-player'>
+
+							<input type="text" 
+								id='t-teamb-player1' 
+								placeholder="Team B Player 1">
+							</p>
+							<input type="text" 
+								id='t-teamb-player4' 
+								placeholder="Team B Player 2">
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- TENNIS SCORING -->
+		<div class="child t-scoring-box indianredbg relative redbd">
+			<div>
+				<h2 class="t-scoring-txt child whitetxt">Points</h2>
+				<h2 class="t-scoring-txtset whitetxt absolute">Sets</h2>
+				<h2 class="t-scoring-txt1 child whitetxt">1</h2>
+				<h2 class="t-scoring-txt2 child whitetxt">2</h2>
+				<h2 class="t-scoring-txt3 child whitetxt">3</h2>
+				<h2 class="t-scoring-txt4 child whitetxt">4</h2>
+				<h2 class="t-scoring-txt5 child whitetxt">5</h2>
+			</div>
+			<div class="dimgraybg blackbd">
+				<h2 class="child blacktxt yellowshadowtxt">Team A</h2>
+				<h2 class="child t-scoring-num ctfont blackbg blacktxt yellowshadowtxt"
+					id="teama-points">00</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg blacktxt yellowshadowtxt"
+					id="aset1">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg blacktxt yellowshadowtxt"
+					id="aset2">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg blacktxt yellowshadowtxt"
+					id="aset3">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg blacktxt yellowshadowtxt"
+					id="aset4">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg blacktxt yellowshadowtxt"
+					id="aset5">0</h2>
+			</div>
+			<div class="dimgraybg blackbd">
+				<h2 class="child whitetxt blueshadowtxt">Team B</h2>
+				<h2 class="child t-scoring-num ctfont blackbg whitetxt blueshadowtxt"
+					id="teamb-points">00</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg whitetxt blueshadowtxt"
+					id="bset1">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg whitetxt blueshadowtxt"
+					id="bset2">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg whitetxt blueshadowtxt"
+					id="bset3">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg whitetxt blueshadowtxt"
+					id="bset4">0</h2>
+				<h2 class="t-scoring-numset child ctfont blackbg whitetxt blueshadowtxt"
+					id="bset5">0</h2>
+			</div>
+			<div>
+				<div>
+					<h2 class="t-scoring-txtserve whitetxt blackbd">Serving</h2>
+					<h2 class="t-scoring-txtserve child blacktxt yellowshadowtxt">TeamA</h2>
+					<h2 class="t-scoring-txtserve child whitetxt blueshadowtxt">TeamB</h2>
+				</div>
+				<div class="child">
+					<button class="bluebg
+						t-teama-serving"
+						id="teama-serve-off">_</button>
+					<button class="redbg
+						t-teama-serving"
+						id="teama-serve-on">_</button>
+						</div>
+				<div class="child">
+					<button class="bluebg
+						t-teamb-serving"
+						id="teamb-serve-off">_</button>
+					<button class="redbg
+						t-teamb-serving"
+						id="teamb-serve-on">_</button>
+
+				</div>
+			</div>
+			<div id="displayThreediv">
+				<button class="d2-0 child blacktxt dimgraybg blackbd absolute" onclick="aadd0()">+0</button>
+				<button class="d2-15 child blacktxt dimgraybg blackbd absolute" onclick="aadd15()">+15</button>
+				<button class="d2-30 child blacktxt dimgraybg blackbd absolute" onclick="aadd30()">+30</button>
+				<button class="d2-40 child blacktxt dimgraybg blackbd absolute" onclick="aadd40()">+40</button>
+				<button class="d2-A child blacktxt dimgraybg blackbd absolute" onclick="aaddA()">+A</button>
+
+				<button class="d2-0b child blacktxt dimgraybg blackbd absolute" onclick="badd0()">+0</button>
+				<button class="d2-15b child blacktxt dimgraybg blackbd absolute" onclick="badd15()">+15</button>
+				<button class="d2-30b child blacktxt dimgraybg blackbd absolute" onclick="badd30()">+30</button>
+				<button class="d2-40b child blacktxt dimgraybg blackbd absolute" onclick="badd40()">+40</button>
+				<button class="d2-Ab child blacktxt dimgraybg blackbd absolute" onclick="baddA()">+A</button>
+
+				<button class="d2-s1a child blacktxt dimgraybg blackbd absolute" onclick="aaddset1()">+1</button>
+				<button class="d2-s1as child blacktxt dimgraybg blackbd absolute" onclick="asubset1()">-1</button>
+
+				<button class="d2-s2a child blacktxt dimgraybg blackbd absolute" onclick="aaddset2()">+1</button>
+				<button class="d2-s2as child blacktxt dimgraybg blackbd absolute" onclick="asubset2()">-1</button>
+			
+				<button class="d2-s3a child blacktxt dimgraybg blackbd absolute" onclick="aaddset3()">+1</button>
+				<button class="d2-s3as child blacktxt dimgraybg blackbd absolute" onclick="asubset3()">-1</button>
+			
+				<button class="d2-s4a child blacktxt dimgraybg blackbd absolute" onclick="aaddset4()">+1</button>
+				<button class="d2-s4as child blacktxt dimgraybg blackbd absolute" onclick="asubset4()">-1</button>
+			
+				<button class="d2-s5a child blacktxt dimgraybg blackbd absolute" onclick="aaddset5()">+1</button>
+				<button class="d2-s5as child blacktxt dimgraybg blackbd absolute" onclick="asubset5()">-1</button>
+
+
+				<button class="d2-s1b child blacktxt dimgraybg blackbd absolute" onclick="baddset1()">+1</button>
+				<button class="d2-s1bs child blacktxt dimgraybg blackbd absolute" onclick="bsubset1()">-1</button>
+
+				<button class="d2-s2b child blacktxt dimgraybg blackbd absolute" onclick="baddset2()">+1</button>
+				<button class="d2-s2bs child blacktxt dimgraybg blackbd absolute" onclick="bsubset2()">-1</button>
+		
+				<button class="d2-s3b child blacktxt dimgraybg blackbd absolute" onclick="baddset3()">+1</button>
+				<button class="d2-s3bs child blacktxt dimgraybg blackbd absolute" onclick="bsubset3()">-1</button>
+		
+				<button class="d2-s4b child blacktxt dimgraybg blackbd absolute" onclick="baddset4()">+1</button>
+				<button class="d2-s4bs child blacktxt dimgraybg blackbd absolute" onclick="bsubset4()">-1</button>
+	
+				<button class="d2-s5b child blacktxt dimgraybg blackbd absolute" onclick="baddset5()">+1</button>
+				<button class="d2-s5bs child blacktxt dimgraybg blackbd absolute" onclick="bsubset5()">-1</button>
+				
+				<button class="d2-ra blacktxt dimgraybg blackbd absolute" onclick="a1reset()">Reset</button>
+				<button class="d2-rb child blacktxt dimgraybg blackbd absolute" onclick="b1reset()">Reset</button>
+
+
+				<div class="child">
+					<button class="blacktxt child redbd indianredbg"
+						id='displayOne1'>H/S Players</button>
+					<button class="blacktxt child redbd indianredbg"
+						id='displayTwo1'>H/S Buttons</button>
+				</div>
+			</div>
+		</div>
+		<div class="child whitetxt relative" id="displayTwodiv">
+				<h3>Scorepoint</h3>
+			<div class="whitetxt whitebd">
+				<h3 class="child">Team A</h3>
+				<button class="child blacktxt" onclick="aadd0()">+0</button>
+				<button class="child blacktxt" onclick="aadd15()">+15</button>
+				<button class="child blacktxt" onclick="aadd30()">+30</button>
+				<button class="child blacktxt" onclick="aadd40()">+40</button>
+				<button class="child blacktxt" onclick="aaddA()">+A</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="areset()">Reset</button>
+			</div>
+			<div class="whitetxt whitebd">
+				<h3 class="child">Team B</h3>
+				<button class="child blacktxt" onclick="badd0()">+0</button>
+				<button class="child blacktxt" onclick="badd15()">+15</button>
+				<button class="child blacktxt" onclick="badd30()">+30</button>
+				<button class="child blacktxt" onclick="badd40()">+40</button>
+				<button class="child blacktxt" onclick="baddA()">+A</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="breset()">Reset</button>
+			</div>
+				<h3 class="t-button-settxt child">Sets</h3>
+				<h3 class="t-button-num1 child">1</h3>
+				<h3 class="t-button-num2 child">2</h3>
+				<h3 class="t-button-num3 child">3</h3>
+				<h3 class="t-button-num4 child">4</h3>
+				<h3 class="t-button-num5 child">5</h3>
+			<div class="whitetxt whitebd">
+				<h3 class="child">Team A</h3>
+				<button class="child blacktxt" onclick="aaddset1()">+1</button>
+				<button class="child blacktxt" onclick="asubset1()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="aaddset2()">+1</button>
+				<button class="child blacktxt" onclick="asubset2()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="aaddset3()">+1</button>
+				<button class="child blacktxt" onclick="asubset3()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="aaddset4()">+1</button>
+				<button class="child blacktxt" onclick="asubset4()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="aaddset5()">+1</button>
+				<button class="child blacktxt" onclick="asubset5()">-1</button>
+			</div>
+			<div class="whitetxt whitebd">
+				<h3 class="child">Team B</h3>
+				<button class="child blacktxt" onclick="baddset1()">+1</button>
+				<button class="child blacktxt" onclick="bsubset1()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="baddset2()">+1</button>
+				<button class="child blacktxt" onclick="bsubset2()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="baddset3()">+1</button>
+				<button class="child blacktxt" onclick="bsubset3()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="baddset4()">+1</button>
+				<button class="child blacktxt" onclick="bsubset4()">-1</button>
+				<p class="child"> | </p>
+				<button class="child blacktxt" onclick="baddset5()">+1</button>
+				<button class="child blacktxt" onclick="bsubset5()">-1</button>
+			</div>
+			<div class="whitetxt whitebd">
+				<div class="child">
+					<div>
+						<h3 class="t-button-setreset child">Set Team A</h3>
+						<button class=" blacktxt" onclick="a1reset()">Reset</button>
+					</div>
+					<div>
+						<h3 class="t-button-setreset child">Set Team B</h3>
+						<button class="child blacktxt" onclick="b1reset()">Reset</button>
+					</div>
+				</div>
+				<p class="child">|</p>
+				<div class="child">
+					<button class="blacktxt child"
+						id='displayOne'>H/S Players</button>
+					<button class="blacktxt child"
+						id='displayTwo'>H/S Buttons</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+<script src="../../jquery.js"></script>
+<script src = "tennis.js"></script>
+</body>
+
+</html>
