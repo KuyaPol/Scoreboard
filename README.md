@@ -8,6 +8,6 @@ There will be a icon on the top left to change sports.
 
 Please note that this is a prototype and it is not completely finished.
 
-If you have any thoughts about our project please copy this survey :)
+If you have any thoughts about our project please click or copy this survey :)
 
 https://docs.google.com/forms/d/e/1FAIpQLSegUNBnamy0MBcqCl96Cy2aZCF2Y3fNtGlpey-_MbuYiuSHww/viewform?usp=sf_link
